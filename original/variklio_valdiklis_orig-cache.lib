@@ -444,11 +444,24 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# ics_MC33035
+# power_GND
 #
-DEF ics_MC33035 U 0 40 Y Y 1 F N
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# variklio_valdiklis_orig-rescue_MC33035-ics
+#
+DEF variklio_valdiklis_orig-rescue_MC33035-ics U 0 40 Y Y 1 F N
 F0 "U" -450 850 50 H V C CNN
-F1 "ics_MC33035" 350 850 50 H V C CNN
+F1 "variklio_valdiklis_orig-rescue_MC33035-ics" 350 850 50 H V C CNN
 F2 "Package_DIP:DIP-24_W7.62mm" 0 -200 50 H I C CNN
 F3 "" 0 -200 50 H I C CNN
 DRAW
@@ -480,11 +493,11 @@ X SENS 9 600 -600 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ics_MC33039
+# variklio_valdiklis_orig-rescue_MC33039-ics
 #
-DEF ics_MC33039 U 0 40 Y Y 1 F N
+DEF variklio_valdiklis_orig-rescue_MC33039-ics U 0 40 Y Y 1 F N
 F0 "U" -200 300 50 H V C CNN
-F1 "ics_MC33039" 250 300 50 H V C CNN
+F1 "variklio_valdiklis_orig-rescue_MC33039-ics" 250 300 50 H V C CNN
 F2 "Package_DIP:DIP-8_W7.62mm" 0 -100 50 H I C CNN
 F3 "" 0 -100 50 H I C CNN
 DRAW
@@ -500,11 +513,11 @@ X VCC 8 0 350 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# ics_Si9910
+# variklio_valdiklis_orig-rescue_Si9910-ics
 #
-DEF ics_Si9910 U 0 40 Y Y 1 F N
+DEF variklio_valdiklis_orig-rescue_Si9910-ics U 0 40 Y Y 1 F N
 F0 "U" -250 350 50 H V C CNN
-F1 "ics_Si9910" 150 350 50 H V C CNN
+F1 "variklio_valdiklis_orig-rescue_Si9910-ics" 150 350 50 H V C CNN
 F2 "Package_DIP:DIP-8_W7.62mm" -150 100 50 H I C CNN
 F3 "" -150 100 50 H I C CNN
 DRAW
@@ -517,19 +530,6 @@ X ISENSE 5 400 -150 100 L 50 50 1 1 I
 X VSS 6 -400 -150 100 R 50 50 1 1 P
 X PD 7 400 0 100 L 50 50 1 1 O
 X PU 8 400 100 100 L 50 50 1 1 O
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

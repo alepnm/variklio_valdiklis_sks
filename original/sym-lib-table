@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name variklio_valdiklis_orig-rescue)(type Legacy)(uri ${KIPRJMOD}/variklio_valdiklis_orig-rescue.lib)(options "")(descr ""))
+)
