@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:variklio_valdiklis-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -69,7 +69,7 @@ Wire Wire Line
 Text Label 11700 6300 2    50   ~ 0
 ~FAULT
 $Comp
-L ics:MC33035 U600
+L variklio_valdiklis-rescue:MC33035-ics U600
 U 1 1 5D733183
 P 7600 5600
 F 0 "U600" H 7200 6450 50  0000 C CNN
@@ -187,7 +187,7 @@ Wire Wire Line
 Wire Wire Line
 	12300 2350 12150 2350
 $Comp
-L ics:Si9910 U810
+L variklio_valdiklis-rescue:Si9910-ics U810
 U 1 1 5D85649F
 P 12800 3300
 F 0 "U810" H 12650 3650 50  0000 C CNN
@@ -200,7 +200,7 @@ $EndComp
 Wire Wire Line
 	11700 2250 11700 2350
 $Comp
-L ics:Si9910 U20
+L variklio_valdiklis-rescue:Si9910-ics U20
 U 1 1 5D73DF53
 P 12800 1800
 F 0 "U20" H 12600 2150 50  0000 C CNN
@@ -1001,7 +1001,7 @@ Wire Wire Line
 Text Label 6550 5800 0    50   ~ 0
 EAI
 $Comp
-L Sensor_Magnetic:A1101ELHL H600
+L variklio_valdiklis-rescue:A1101ELHL-Sensor_Magnetic H600
 U 1 1 5E96890E
 P 4800 3050
 F 0 "H600" H 5000 3400 50  0000 R CNN
@@ -1012,7 +1012,7 @@ F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 4800 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Magnetic:A1101ELHL H601
+L variklio_valdiklis-rescue:A1101ELHL-Sensor_Magnetic H601
 U 1 1 5E969E5B
 P 5650 3050
 F 0 "H601" H 5800 3400 50  0000 R CNN
@@ -1023,7 +1023,7 @@ F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 5650 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Magnetic:A1101ELHL H602
+L variklio_valdiklis-rescue:A1101ELHL-Sensor_Magnetic H602
 U 1 1 5E96A56F
 P 6400 3050
 F 0 "H602" H 6600 3400 50  0000 R CNN
@@ -1174,7 +1174,7 @@ Wire Wire Line
 Wire Wire Line
 	12400 4750 12350 4750
 $Comp
-L ics:Si9910 U800
+L variklio_valdiklis-rescue:Si9910-ics U800
 U 1 1 5D856BAA
 P 12800 4850
 F 0 "U800" H 12650 5200 50  0000 C CNN
@@ -1491,7 +1491,7 @@ Connection ~ 5550 2550
 Wire Wire Line
 	5550 2550 6300 2550
 $Comp
-L ics:MC33039 U602
+L variklio_valdiklis-rescue:MC33039-ics U602
 U 1 1 68D8E883
 P 5250 5000
 F 0 "U602" H 5450 5300 50  0000 C CNN

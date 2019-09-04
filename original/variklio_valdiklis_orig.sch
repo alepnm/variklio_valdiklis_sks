@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:variklio_valdiklis_orig-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -999,7 +999,7 @@ Wire Wire Line
 Text Label 6550 5800 0    50   ~ 0
 EAI
 $Comp
-L Sensor_Magnetic:A1101ELHL H600
+L variklio_valdiklis_orig-rescue:A1101ELHL-Sensor_Magnetic H600
 U 1 1 5E96890E
 P 4800 3050
 F 0 "H600" H 5000 3400 50  0000 R CNN
@@ -1010,7 +1010,7 @@ F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 4800 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Magnetic:A1101ELHL H601
+L variklio_valdiklis_orig-rescue:A1101ELHL-Sensor_Magnetic H601
 U 1 1 5E969E5B
 P 5650 3050
 F 0 "H601" H 5800 3400 50  0000 R CNN
@@ -1021,7 +1021,7 @@ F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 5650 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Magnetic:A1101ELHL H602
+L variklio_valdiklis_orig-rescue:A1101ELHL-Sensor_Magnetic H602
 U 1 1 5E96A56F
 P 6400 3050
 F 0 "H602" H 6600 3400 50  0000 R CNN
