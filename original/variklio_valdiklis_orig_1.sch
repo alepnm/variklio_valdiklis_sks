@@ -26,10 +26,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 10900 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Comparator:LM393 U?
+L Comparator:LM393 U500
 U 3 1 5D6B46CE
 P 10900 6300
-F 0 "U?" H 10858 6346 50  0001 L CNN
+F 0 "U500" H 10858 6346 50  0001 L CNN
 F 1 "LM393" H 10858 6300 50  0001 L CNN
 F 2 "" H 10900 6300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm393-n.pdf" H 10900 6300 50  0001 C CNN
@@ -2146,10 +2146,10 @@ Wire Wire Line
 Wire Wire Line
 	4050 8500 4150 8500
 $Comp
-L Device:D D103
+L Device:D D107
 U 1 1 624ED292
 P 2450 8950
-F 0 "D103" H 2550 9050 50  0000 R CNN
+F 0 "D107" H 2550 9050 50  0000 R CNN
 F 1 "1N4005" H 2600 8850 50  0000 R CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2450 8950 50  0001 C CNN
 F 3 "~" H 2450 8950 50  0001 C CNN
