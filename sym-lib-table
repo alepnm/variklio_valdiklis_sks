@@ -4,4 +4,5 @@
   (lib (name stm32f103c8tx)(type Legacy)(uri ${KIPRJMOD}/components/stm32f103c8tx.lib)(options "")(descr ""))
   (lib (name variklio_valdiklis_stm32F103-rescue)(type Legacy)(uri ${KIPRJMOD}/variklio_valdiklis_stm32F103-rescue.lib)(options "")(descr ""))
   (lib (name variklio_valdiklis_mc33035-rescue)(type Legacy)(uri ${KIPRJMOD}/variklio_valdiklis_mc33035-rescue.lib)(options "")(descr ""))
+  (lib (name mech)(type Legacy)(uri D:/VentLib/library/mech.lib)(options "")(descr ""))
 )

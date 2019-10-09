@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:variklio_valdiklis_mc33035-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -3053,7 +3053,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 10500 5200 10000
 $Comp
-L resistors_us:R_0R22_2W_5% R826
+L variklio_valdiklis_mc33035-rescue:R_0R22_2W_5%-resistors_us R826
 U 1 1 5DA65689
 P 14500 2900
 F 0 "R826" H 14450 2800 50  0000 C CNN
@@ -3074,7 +3074,7 @@ $EndComp
 Wire Wire Line
 	14650 2900 14950 2900
 $Comp
-L resistors_us:R_0R22_2W_5% R827
+L variklio_valdiklis_mc33035-rescue:R_0R22_2W_5%-resistors_us R827
 U 1 1 5DA69207
 P 14500 4500
 F 0 "R827" H 14450 4400 50  0000 C CNN
@@ -3095,7 +3095,7 @@ $EndComp
 Wire Wire Line
 	14350 4500 14050 4500
 $Comp
-L resistors_us:R_0R22_2W_5% R828
+L variklio_valdiklis_mc33035-rescue:R_0R22_2W_5%-resistors_us R828
 U 1 1 5DA69BB3
 P 14500 6100
 F 0 "R828" H 14450 6000 50  0000 C CNN

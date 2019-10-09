@@ -75,4 +75,33 @@ X VCC 8 0 350 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# R_0R22_2W_5%-resistors_us
+#
+DEF R_0R22_2W_5%-resistors_us R 0 40 N N 1 F N
+F0 "R" 0 100 60 H V C CNN
+F1 "R_0R22_2W_5%-resistors_us" 1500 150 60 H I C CNN
+F2 "resistors:R_Axial_DIN0411_L9.9mm_D3.6mm_P15.24mm_Horizontal" 2050 50 60 H I C CNN
+F3 "" -1600 500 60 H I C CNN
+F4 "ZELR065" 0 -200 60 H I C CNN "ventcode"
+F5 "0R22/2W" 0 -100 60 H V C CNN "Nominalas"
+F6 "0.01" 1350 -50 60 H I C CNN "Kaina"
+F7 "0411" 1350 -150 60 H I C CNN "Korpusas"
+F8 "1" 950 -50 60 H I C CNN "Aukstis"
+F9 "-" 1750 -150 60 H I C CNN "Marke"
+F10 "Rezistorius" 800 150 60 H I C CNN "Pavadinimas"
+F11 "-" 600 -50 60 H I C CNN "Gamintojo Kodas"
+F12 "-" 600 -100 60 H I C CNN "Nuoroda"
+F13 "DIP" 1750 -50 60 H I C CNN "Korpuso tipas"
+F14 "-" 600 -150 60 H I C CNN "Parametras"
+F15 "-" 600 -200 60 H I C CNN "Komentaras"
+DRAW
+P 2 1 1 4 -45 -40 -15 40 N
+P 2 1 1 4 75 -40 90 0 N
+P 3 1 1 4 -90 0 -75 40 -45 -40 N
+P 4 1 1 4 -15 40 15 -40 45 40 75 -40 N
+X ~ 1 -150 0 59 R 50 50 1 1 P
+X ~ 2 150 0 59 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 #End Library
