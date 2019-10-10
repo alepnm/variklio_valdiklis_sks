@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:variklio_valdiklis_stm32F103-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -41,21 +41,21 @@ L variklio_valdiklis_stm32F103-rescue:A1101ELHL-Sensor_Magnetic-variklio_valdikl
 U 1 1 5DA1E789
 P 13950 3100
 F 0 "H3" H 14150 3450 50  0000 R CNN
-F 1 "SC" H 13720 3055 50  0001 R CNN
+F 1 "SC" H 14150 2750 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 13950 2750 50  0001 L CIN
 F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 13950 3750 50  0001 C CNN
 	1    13950 3100
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR024
 U 1 1 5DA1E78A
-P 12650 3700
-F 0 "#PWR016" H 12650 3450 50  0001 C CNN
-F 1 "GND" H 12655 3527 50  0001 C CNN
-F 2 "" H 12650 3700 50  0001 C CNN
-F 3 "" H 12650 3700 50  0001 C CNN
-	1    12650 3700
+P 12650 3500
+F 0 "#PWR024" H 12650 3250 50  0001 C CNN
+F 1 "GND" H 12655 3327 50  0001 C CNN
+F 2 "" H 12650 3500 50  0001 C CNN
+F 3 "" H 12650 3500 50  0001 C CNN
+	1    12650 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -65,28 +65,28 @@ Wire Wire Line
 Wire Wire Line
 	13350 2700 13350 2550
 $Comp
-L power:GND #PWR020
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR028
 U 1 1 5DA1E78B
-P 13350 3700
-F 0 "#PWR020" H 13350 3450 50  0001 C CNN
-F 1 "GND" H 13355 3527 50  0001 C CNN
-F 2 "" H 13350 3700 50  0001 C CNN
-F 3 "" H 13350 3700 50  0001 C CNN
-	1    13350 3700
+P 13350 3500
+F 0 "#PWR028" H 13350 3250 50  0001 C CNN
+F 1 "GND" H 13355 3327 50  0001 C CNN
+F 2 "" H 13350 3500 50  0001 C CNN
+F 3 "" H 13350 3500 50  0001 C CNN
+	1    13350 3500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR021
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR029
 U 1 1 5DA1E78C
-P 14050 3700
-F 0 "#PWR021" H 14050 3450 50  0001 C CNN
-F 1 "GND" H 14055 3527 50  0001 C CNN
-F 2 "" H 14050 3700 50  0001 C CNN
-F 3 "" H 14050 3700 50  0001 C CNN
-	1    14050 3700
+P 14050 3500
+F 0 "#PWR029" H 14050 3250 50  0001 C CNN
+F 1 "GND" H 14055 3327 50  0001 C CNN
+F 2 "" H 14050 3500 50  0001 C CNN
+F 3 "" H 14050 3500 50  0001 C CNN
+	1    14050 3500
 	1    0    0    -1  
 $EndComp
-Text Label 11650 3100 0    50   ~ 0
+Text Label 12950 2550 0    50   ~ 0
 VCC
 Wire Wire Line
 	12650 2550 13350 2550
@@ -94,146 +94,1577 @@ Connection ~ 13350 2550
 Wire Wire Line
 	13350 2550 14050 2550
 Wire Wire Line
-	11950 3100 11950 2550
-Wire Wire Line
-	11950 2550 12650 2550
-Connection ~ 12650 2550
-Wire Wire Line
-	12650 3500 12650 3650
-Wire Wire Line
-	13350 3500 13350 3700
-Wire Wire Line
-	14050 3500 14050 3700
-Wire Wire Line
-	11950 3500 11950 3650
-Wire Wire Line
-	11950 3650 12650 3650
-Connection ~ 12650 3650
-Wire Wire Line
-	12650 3650 12650 3700
-Wire Wire Line
-	12050 3200 12050 3100
-Wire Wire Line
-	12050 3100 12250 3100
-Wire Wire Line
-	12150 3300 12150 2650
-Wire Wire Line
-	12150 2650 12850 2650
-Wire Wire Line
 	12850 2650 12850 3100
 Wire Wire Line
 	12850 3100 12950 3100
 Wire Wire Line
-	12150 3400 12150 3550
-Wire Wire Line
-	12150 3550 13550 3550
-Wire Wire Line
-	13550 3550 13550 3100
+	13550 3650 13550 3100
 Wire Wire Line
 	13550 3100 13650 3100
 $Comp
-L Device:C C16
+L variklio_valdiklis_stm32F103-rescue:C-Device C21
 U 1 1 5F0D9084
-P 14500 2850
-F 0 "C16" H 14550 2750 50  0000 L CNN
-F 1 "0.1" H 14500 2950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 14538 2700 50  0001 C CNN
-F 3 "~" H 14500 2850 50  0001 C CNN
-	1    14500 2850
+P 14500 2800
+F 0 "C21" H 14550 2700 50  0000 L CNN
+F 1 "0.1" H 14500 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 14538 2650 50  0001 C CNN
+F 3 "~" H 14500 2800 50  0001 C CNN
+	1    14500 2800
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C17
+L variklio_valdiklis_stm32F103-rescue:C-Device C22
 U 1 1 5F0D9D29
-P 14900 2850
-F 0 "C17" H 14950 2750 50  0000 L CNN
-F 1 "0.1" H 14900 2950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 14938 2700 50  0001 C CNN
-F 3 "~" H 14900 2850 50  0001 C CNN
-	1    14900 2850
+P 14900 2800
+F 0 "C22" H 14950 2700 50  0000 L CNN
+F 1 "0.1" H 14900 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 14938 2650 50  0001 C CNN
+F 3 "~" H 14900 2800 50  0001 C CNN
+	1    14900 2800
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C18
+L variklio_valdiklis_stm32F103-rescue:C-Device C23
 U 1 1 5F0DA06B
-P 15250 2850
-F 0 "C18" H 15250 2750 50  0000 L CNN
-F 1 "0.1" H 15300 2950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 15288 2700 50  0001 C CNN
-F 3 "~" H 15250 2850 50  0001 C CNN
-	1    15250 2850
+P 15250 2800
+F 0 "C23" H 15250 2700 50  0000 L CNN
+F 1 "0.1" H 15300 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 15288 2650 50  0001 C CNN
+F 3 "~" H 15250 2800 50  0001 C CNN
+	1    15250 2800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	11550 3100 11950 3100
-Wire Wire Line
-	11550 3200 12050 3200
-Wire Wire Line
-	11550 3300 12150 3300
-Wire Wire Line
-	11550 3400 12150 3400
-Wire Wire Line
-	11550 3500 11950 3500
 Wire Wire Line
 	14050 2550 14500 2550
 Wire Wire Line
-	15250 2550 15250 2700
+	15250 2550 15250 2650
 Connection ~ 14050 2550
 Wire Wire Line
-	14500 2700 14500 2550
+	14500 2650 14500 2550
 Connection ~ 14500 2550
 Wire Wire Line
 	14500 2550 14900 2550
 Wire Wire Line
-	14900 2700 14900 2550
+	14900 2650 14900 2550
 Connection ~ 14900 2550
 Wire Wire Line
 	14900 2550 15250 2550
 $Comp
-L power:GND #PWR022
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR031
 U 1 1 5DA1E790
-P 14500 3100
-F 0 "#PWR022" H 14500 2850 50  0001 C CNN
-F 1 "GND" H 14505 2927 50  0001 C CNN
-F 2 "" H 14500 3100 50  0001 C CNN
-F 3 "" H 14500 3100 50  0001 C CNN
-	1    14500 3100
+P 14500 2950
+F 0 "#PWR031" H 14500 2700 50  0001 C CNN
+F 1 "GND" H 14505 2777 50  0001 C CNN
+F 2 "" H 14500 2950 50  0001 C CNN
+F 3 "" H 14500 2950 50  0001 C CNN
+	1    14500 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR023
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR032
 U 1 1 5F1E1DBA
-P 14900 3100
-F 0 "#PWR023" H 14900 2850 50  0001 C CNN
-F 1 "GND" H 14905 2927 50  0001 C CNN
-F 2 "" H 14900 3100 50  0001 C CNN
-F 3 "" H 14900 3100 50  0001 C CNN
-	1    14900 3100
+P 14900 2950
+F 0 "#PWR032" H 14900 2700 50  0001 C CNN
+F 1 "GND" H 14905 2777 50  0001 C CNN
+F 2 "" H 14900 2950 50  0001 C CNN
+F 3 "" H 14900 2950 50  0001 C CNN
+	1    14900 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR024
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR034
 U 1 1 5F1E20AA
-P 15250 3100
-F 0 "#PWR024" H 15250 2850 50  0001 C CNN
-F 1 "GND" H 15255 2927 50  0001 C CNN
-F 2 "" H 15250 3100 50  0001 C CNN
-F 3 "" H 15250 3100 50  0001 C CNN
-	1    15250 3100
+P 15250 2950
+F 0 "#PWR034" H 15250 2700 50  0001 C CNN
+F 1 "GND" H 15255 2777 50  0001 C CNN
+F 2 "" H 15250 2950 50  0001 C CNN
+F 3 "" H 15250 2950 50  0001 C CNN
+	1    15250 2950
+	1    0    0    -1  
+$EndComp
+Text Label 11200 3100 0    50   ~ 0
+SA
+Text Label 11200 2650 0    50   ~ 0
+SB
+Text Label 11200 3650 0    50   ~ 0
+SC
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IR2101-Driver_FET U8
+U 1 1 5DA2CAE6
+P 12650 5050
+F 0 "U8" H 12500 5500 50  0000 C CNN
+F 1 "IR2101" H 12850 5500 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12650 5050 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 12650 5050 50  0001 C CNN
+	1    12650 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C18
+U 1 1 5DA2E65D
+P 13150 5050
+F 0 "C18" H 13000 4950 50  0000 L CNN
+F 1 "1.0uFx50V" H 12650 5050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13188 4900 50  0001 C CNN
+F 3 "~" H 13150 5050 50  0001 C CNN
+	1    13150 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12950 4750 13150 4750
+Wire Wire Line
+	13150 4750 13150 4900
+Wire Wire Line
+	12950 5250 13150 5250
+Wire Wire Line
+	13150 5250 13150 5200
+Wire Wire Line
+	12750 4400 12650 4400
+Wire Wire Line
+	12650 4400 12650 4550
+Wire Wire Line
+	13050 4400 13150 4400
+Wire Wire Line
+	13150 4400 13150 4750
+Connection ~ 13150 4750
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR025
+U 1 1 5DADA7D2
+P 12650 5550
+F 0 "#PWR025" H 12650 5300 50  0001 C CNN
+F 1 "GND" H 12655 5377 50  0001 C CNN
+F 2 "" H 12650 5550 50  0001 C CNN
+F 3 "" H 12650 5550 50  0001 C CNN
+	1    12650 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14500 3000 14500 3100
+	12650 4400 12200 4400
+Connection ~ 12650 4400
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R22
+U 1 1 5DB31922
+P 13550 4850
+F 0 "R22" V 13650 4750 50  0000 C CNN
+F 1 "47R" V 13650 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13480 4850 50  0001 C CNN
+F 3 "~" H 13550 4850 50  0001 C CNN
+	1    13550 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R23
+U 1 1 5DB3211F
+P 13550 5350
+F 0 "R23" V 13450 5250 50  0000 C CNN
+F 1 "47R" V 13450 5450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13480 5350 50  0001 C CNN
+F 3 "~" H 13550 5350 50  0001 C CNN
+	1    13550 5350
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	14900 3000 14900 3100
+	13400 4850 13350 4850
 Wire Wire Line
-	15250 3000 15250 3100
-Text Label 11650 3200 0    50   ~ 0
-~SA
-Text Label 11650 3300 0    50   ~ 0
-~SB
-Text Label 11650 3400 0    50   ~ 0
-~SC
+	13400 5350 13350 5350
+Text Label 11900 4400 0    50   ~ 0
+VCC
+Wire Wire Line
+	12350 5050 11900 5050
+Wire Wire Line
+	12350 5150 11900 5150
+Text Label 11900 5050 0    50   ~ 0
+CHA
+Text Label 11900 5150 0    50   ~ 0
+~CHA
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C15
+U 1 1 5DCC4A8C
+P 12200 4650
+F 0 "C15" H 12350 4600 50  0000 L CNN
+F 1 "100n" H 12350 4700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12238 4500 50  0001 C CNN
+F 3 "~" H 12200 4650 50  0001 C CNN
+	1    12200 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12200 4500 12200 4400
+Connection ~ 12200 4400
+Wire Wire Line
+	12200 4400 11900 4400
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR021
+U 1 1 5DD4B4F2
+P 12200 4800
+F 0 "#PWR021" H 12200 4550 50  0001 C CNN
+F 1 "GND" H 12205 4627 50  0001 C CNN
+F 2 "" H 12200 4800 50  0001 C CNN
+F 3 "" H 12200 4800 50  0001 C CNN
+	1    12200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D15
+U 1 1 5DD78104
+P 13550 5500
+F 0 "D15" H 13500 5400 50  0000 R CNN
+F 1 "LL4148" H 13850 5400 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 13550 5500 50  0001 C CNN
+F 3 "~" H 13550 5500 50  0001 C CNN
+	1    13550 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 5500 13350 5500
+Wire Wire Line
+	13350 5500 13350 5350
+Connection ~ 13350 5350
+Wire Wire Line
+	13350 5350 12950 5350
+Wire Wire Line
+	13700 5500 13750 5500
+Wire Wire Line
+	13750 5500 13750 5350
+Wire Wire Line
+	13750 5350 13700 5350
+Wire Wire Line
+	13750 5350 13900 5350
+Connection ~ 13750 5350
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D14
+U 1 1 5DE04B97
+P 13550 4700
+F 0 "D14" H 13500 4800 50  0000 R CNN
+F 1 "LL4148" H 13850 4800 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 13550 4700 50  0001 C CNN
+F 3 "~" H 13550 4700 50  0001 C CNN
+	1    13550 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 4700 13350 4700
+Wire Wire Line
+	13350 4700 13350 4850
+Connection ~ 13350 4850
+Wire Wire Line
+	13350 4850 12950 4850
+Wire Wire Line
+	13700 4700 13750 4700
+Wire Wire Line
+	13750 4700 13750 4850
+Wire Wire Line
+	13750 4850 13700 4850
+Wire Wire Line
+	13750 4850 13900 4850
+Connection ~ 13750 4850
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IRF740-Transistor_FET Q2
+U 1 1 5DF5607D
+P 14350 4850
+F 0 "Q2" H 14550 4800 50  0000 L CNN
+F 1 "IRF830" H 14556 4805 50  0001 L CNN
+F 2 "valdiklio_footprints:TO-220-3_Vertical" H 14600 4775 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14350 4850 50  0001 L CNN
+	1    14350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IRF740-Transistor_FET Q3
+U 1 1 5DF57558
+P 14350 5350
+F 0 "Q3" H 14550 5300 50  0000 L CNN
+F 1 "IRF830" H 14556 5305 50  0001 L CNN
+F 2 "valdiklio_footprints:TO-220-3_Vertical" H 14600 5275 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14350 5350 50  0001 L CNN
+	1    14350 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 5050 14450 5100
+Wire Wire Line
+	13150 5250 13350 5250
+Wire Wire Line
+	13350 5250 13350 5100
+Wire Wire Line
+	13350 5100 14300 5100
+Connection ~ 13150 5250
+Connection ~ 14450 5100
+Wire Wire Line
+	14450 5100 14450 5150
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R28
+U 1 1 5DFBAEBF
+P 14100 5000
+F 0 "R28" V 14250 4900 50  0000 C CNN
+F 1 "1K0" V 14250 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14030 5000 50  0001 C CNN
+F 3 "~" H 14100 5000 50  0001 C CNN
+	1    14100 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13950 5000 13900 5000
+Wire Wire Line
+	13900 5000 13900 4850
+Connection ~ 13900 4850
+Wire Wire Line
+	13900 4850 14150 4850
+Wire Wire Line
+	14250 5000 14300 5000
+Wire Wire Line
+	14300 5000 14300 5100
+Connection ~ 14300 5100
+Wire Wire Line
+	14300 5100 14450 5100
+Wire Wire Line
+	14450 5600 14450 5550
+Wire Wire Line
+	14000 5600 13900 5600
+Wire Wire Line
+	13900 5600 13900 5350
+Connection ~ 13900 5350
+Wire Wire Line
+	13900 5350 14150 5350
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D11
+U 1 1 5DA82EB4
+P 12900 4400
+F 0 "D11" H 13000 4300 50  0000 C CNN
+F 1 "UF4005" H 12750 4300 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 12900 4400 50  0001 C CNN
+F 3 "~" H 12900 4400 50  0001 C CNN
+	1    12900 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R31
+U 1 1 5E02109A
+P 14150 5600
+F 0 "R31" V 14050 5500 50  0000 C CNN
+F 1 "1K0" V 14050 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14080 5600 50  0001 C CNN
+F 3 "~" H 14150 5600 50  0001 C CNN
+	1    14150 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IR2101-Driver_FET U9
+U 1 1 5E0CC088
+P 12650 6650
+F 0 "U9" H 12500 7100 50  0000 C CNN
+F 1 "IR2101" H 12850 7100 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12650 6650 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 12650 6650 50  0001 C CNN
+	1    12650 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C19
+U 1 1 5E0CC092
+P 13150 6650
+F 0 "C19" H 13000 6550 50  0000 L CNN
+F 1 "1.0uFx50V" H 12650 6650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13188 6500 50  0001 C CNN
+F 3 "~" H 13150 6650 50  0001 C CNN
+	1    13150 6650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12950 6350 13150 6350
+Wire Wire Line
+	13150 6350 13150 6500
+Wire Wire Line
+	12950 6850 13150 6850
+Wire Wire Line
+	13150 6850 13150 6800
+Wire Wire Line
+	12750 6000 12650 6000
+Wire Wire Line
+	12650 6000 12650 6150
+Wire Wire Line
+	13050 6000 13150 6000
+Wire Wire Line
+	13150 6000 13150 6350
+Connection ~ 13150 6350
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR026
+U 1 1 5E0CC0A5
+P 12650 7150
+F 0 "#PWR026" H 12650 6900 50  0001 C CNN
+F 1 "GND" H 12655 6977 50  0001 C CNN
+F 2 "" H 12650 7150 50  0001 C CNN
+F 3 "" H 12650 7150 50  0001 C CNN
+	1    12650 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 6000 12200 6000
+Connection ~ 12650 6000
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R24
+U 1 1 5E0CC0B2
+P 13550 6450
+F 0 "R24" V 13650 6350 50  0000 C CNN
+F 1 "47R" V 13650 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13480 6450 50  0001 C CNN
+F 3 "~" H 13550 6450 50  0001 C CNN
+	1    13550 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R25
+U 1 1 5E0CC0BC
+P 13550 6950
+F 0 "R25" V 13450 6850 50  0000 C CNN
+F 1 "47R" V 13450 7050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13480 6950 50  0001 C CNN
+F 3 "~" H 13550 6950 50  0001 C CNN
+	1    13550 6950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13400 6450 13350 6450
+Wire Wire Line
+	13400 6950 13350 6950
+Text Label 11900 6000 0    50   ~ 0
+VCC
+Wire Wire Line
+	12350 6650 11900 6650
+Wire Wire Line
+	12350 6750 11900 6750
+Text Label 11900 6650 0    50   ~ 0
+CHB
+Text Label 11900 6750 0    50   ~ 0
+~CHB
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C16
+U 1 1 5E0CC0CD
+P 12200 6250
+F 0 "C16" H 12350 6200 50  0000 L CNN
+F 1 "100n" H 12350 6300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12238 6100 50  0001 C CNN
+F 3 "~" H 12200 6250 50  0001 C CNN
+	1    12200 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12200 6100 12200 6000
+Connection ~ 12200 6000
+Wire Wire Line
+	12200 6000 11900 6000
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR022
+U 1 1 5E0CC0DA
+P 12200 6400
+F 0 "#PWR022" H 12200 6150 50  0001 C CNN
+F 1 "GND" H 12205 6227 50  0001 C CNN
+F 2 "" H 12200 6400 50  0001 C CNN
+F 3 "" H 12200 6400 50  0001 C CNN
+	1    12200 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D17
+U 1 1 5E0CC0E4
+P 13550 7100
+F 0 "D17" H 13500 7000 50  0000 R CNN
+F 1 "LL4148" H 13850 7000 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 13550 7100 50  0001 C CNN
+F 3 "~" H 13550 7100 50  0001 C CNN
+	1    13550 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 7100 13350 7100
+Wire Wire Line
+	13350 7100 13350 6950
+Connection ~ 13350 6950
+Wire Wire Line
+	13350 6950 12950 6950
+Wire Wire Line
+	13700 7100 13750 7100
+Wire Wire Line
+	13750 7100 13750 6950
+Wire Wire Line
+	13750 6950 13700 6950
+Wire Wire Line
+	13750 6950 13900 6950
+Connection ~ 13750 6950
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D16
+U 1 1 5E0CC0F7
+P 13550 6300
+F 0 "D16" H 13500 6400 50  0000 R CNN
+F 1 "LL4148" H 13850 6400 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 13550 6300 50  0001 C CNN
+F 3 "~" H 13550 6300 50  0001 C CNN
+	1    13550 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 6300 13350 6300
+Wire Wire Line
+	13350 6300 13350 6450
+Connection ~ 13350 6450
+Wire Wire Line
+	13350 6450 12950 6450
+Wire Wire Line
+	13700 6300 13750 6300
+Wire Wire Line
+	13750 6300 13750 6450
+Wire Wire Line
+	13750 6450 13700 6450
+Wire Wire Line
+	13750 6450 13900 6450
+Connection ~ 13750 6450
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IRF740-Transistor_FET Q4
+U 1 1 5E0CC10A
+P 14350 6450
+F 0 "Q4" H 14550 6400 50  0000 L CNN
+F 1 "IRF830" H 14556 6405 50  0001 L CNN
+F 2 "valdiklio_footprints:TO-220-3_Vertical" H 14600 6375 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14350 6450 50  0001 L CNN
+	1    14350 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IRF740-Transistor_FET Q5
+U 1 1 5E0CC114
+P 14350 6950
+F 0 "Q5" H 14550 6900 50  0000 L CNN
+F 1 "IRF830" H 14556 6905 50  0001 L CNN
+F 2 "valdiklio_footprints:TO-220-3_Vertical" H 14600 6875 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14350 6950 50  0001 L CNN
+	1    14350 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 6650 14450 6700
+Wire Wire Line
+	13150 6850 13350 6850
+Wire Wire Line
+	13350 6850 13350 6700
+Wire Wire Line
+	13350 6700 14300 6700
+Connection ~ 13150 6850
+Connection ~ 14450 6700
+Wire Wire Line
+	14450 6700 14450 6750
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R29
+U 1 1 5E0CC125
+P 14100 6600
+F 0 "R29" V 14250 6450 50  0000 C CNN
+F 1 "1K0" V 14250 6650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14030 6600 50  0001 C CNN
+F 3 "~" H 14100 6600 50  0001 C CNN
+	1    14100 6600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13950 6600 13900 6600
+Wire Wire Line
+	13900 6600 13900 6450
+Connection ~ 13900 6450
+Wire Wire Line
+	13900 6450 14150 6450
+Wire Wire Line
+	14250 6600 14300 6600
+Wire Wire Line
+	14300 6600 14300 6700
+Connection ~ 14300 6700
+Wire Wire Line
+	14300 6700 14450 6700
+Wire Wire Line
+	14450 7200 14450 7150
+Wire Wire Line
+	14000 7200 13900 7200
+Wire Wire Line
+	13900 7200 13900 6950
+Connection ~ 13900 6950
+Wire Wire Line
+	13900 6950 14150 6950
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D12
+U 1 1 5E0CC13F
+P 12900 6000
+F 0 "D12" H 13000 5900 50  0000 C CNN
+F 1 "UF4005" H 12750 5900 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 12900 6000 50  0001 C CNN
+F 3 "~" H 12900 6000 50  0001 C CNN
+	1    12900 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R32
+U 1 1 5E0CC149
+P 14150 7200
+F 0 "R32" V 14050 7100 50  0000 C CNN
+F 1 "1K0" V 14050 7300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14080 7200 50  0001 C CNN
+F 3 "~" H 14150 7200 50  0001 C CNN
+	1    14150 7200
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IR2101-Driver_FET U10
+U 1 1 5E11FE80
+P 12650 8250
+F 0 "U10" H 12500 8700 50  0000 C CNN
+F 1 "IR2101" H 12850 8700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12650 8250 50  0001 C CIN
+F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 12650 8250 50  0001 C CNN
+	1    12650 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C20
+U 1 1 5E11FE86
+P 13150 8250
+F 0 "C20" H 13000 8150 50  0000 L CNN
+F 1 "1.0uFx50V" H 12650 8250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 13188 8100 50  0001 C CNN
+F 3 "~" H 13150 8250 50  0001 C CNN
+	1    13150 8250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12950 7950 13150 7950
+Wire Wire Line
+	13150 7950 13150 8100
+Wire Wire Line
+	12950 8450 13150 8450
+Wire Wire Line
+	13150 8450 13150 8400
+Wire Wire Line
+	12750 7600 12650 7600
+Wire Wire Line
+	12650 7600 12650 7750
+Wire Wire Line
+	13050 7600 13150 7600
+Wire Wire Line
+	13150 7600 13150 7950
+Connection ~ 13150 7950
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR027
+U 1 1 5E11FE95
+P 12650 8750
+F 0 "#PWR027" H 12650 8500 50  0001 C CNN
+F 1 "GND" H 12655 8577 50  0001 C CNN
+F 2 "" H 12650 8750 50  0001 C CNN
+F 3 "" H 12650 8750 50  0001 C CNN
+	1    12650 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 7600 12200 7600
+Connection ~ 12650 7600
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R26
+U 1 1 5E11FE9E
+P 13550 8050
+F 0 "R26" V 13650 8000 50  0000 C CNN
+F 1 "47R" V 13650 8200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13480 8050 50  0001 C CNN
+F 3 "~" H 13550 8050 50  0001 C CNN
+	1    13550 8050
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R27
+U 1 1 5E11FEA4
+P 13550 8550
+F 0 "R27" V 13450 8500 50  0000 C CNN
+F 1 "47R" V 13450 8700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13480 8550 50  0001 C CNN
+F 3 "~" H 13550 8550 50  0001 C CNN
+	1    13550 8550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13400 8050 13350 8050
+Wire Wire Line
+	13400 8550 13350 8550
+Text Label 11900 7600 0    50   ~ 0
+VCC
+Wire Wire Line
+	12350 8250 11900 8250
+Wire Wire Line
+	12350 8350 11900 8350
+Text Label 11900 8250 0    50   ~ 0
+CHC
+Text Label 11900 8350 0    50   ~ 0
+~CHC
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C17
+U 1 1 5E11FEB1
+P 12200 7850
+F 0 "C17" H 12350 7800 50  0000 L CNN
+F 1 "100n" H 12350 7900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 12238 7700 50  0001 C CNN
+F 3 "~" H 12200 7850 50  0001 C CNN
+	1    12200 7850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	12200 7700 12200 7600
+Connection ~ 12200 7600
+Wire Wire Line
+	12200 7600 11900 7600
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR023
+U 1 1 5E11FEBA
+P 12200 8000
+F 0 "#PWR023" H 12200 7750 50  0001 C CNN
+F 1 "GND" H 12205 7827 50  0001 C CNN
+F 2 "" H 12200 8000 50  0001 C CNN
+F 3 "" H 12200 8000 50  0001 C CNN
+	1    12200 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D19
+U 1 1 5E11FEC0
+P 13550 8700
+F 0 "D19" H 13500 8600 50  0000 R CNN
+F 1 "LL4148" H 13850 8600 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 13550 8700 50  0001 C CNN
+F 3 "~" H 13550 8700 50  0001 C CNN
+	1    13550 8700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 8700 13350 8700
+Wire Wire Line
+	13350 8700 13350 8550
+Connection ~ 13350 8550
+Wire Wire Line
+	13350 8550 12950 8550
+Wire Wire Line
+	13700 8700 13750 8700
+Wire Wire Line
+	13750 8700 13750 8550
+Wire Wire Line
+	13750 8550 13700 8550
+Wire Wire Line
+	13750 8550 13900 8550
+Connection ~ 13750 8550
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D18
+U 1 1 5E11FECF
+P 13550 7900
+F 0 "D18" H 13500 8000 50  0000 R CNN
+F 1 "LL4148" H 13850 8000 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 13550 7900 50  0001 C CNN
+F 3 "~" H 13550 7900 50  0001 C CNN
+	1    13550 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 7900 13350 7900
+Wire Wire Line
+	13350 7900 13350 8050
+Connection ~ 13350 8050
+Wire Wire Line
+	13350 8050 12950 8050
+Wire Wire Line
+	13700 7900 13750 7900
+Wire Wire Line
+	13750 7900 13750 8050
+Wire Wire Line
+	13750 8050 13700 8050
+Wire Wire Line
+	13750 8050 13900 8050
+Connection ~ 13750 8050
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IRF740-Transistor_FET Q6
+U 1 1 5E11FEDE
+P 14350 8050
+F 0 "Q6" H 14550 8000 50  0000 L CNN
+F 1 "IRF830" H 14556 8005 50  0001 L CNN
+F 2 "valdiklio_footprints:TO-220-3_Vertical" H 14600 7975 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14350 8050 50  0001 L CNN
+	1    14350 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:IRF740-Transistor_FET Q7
+U 1 1 5E11FEE4
+P 14350 8550
+F 0 "Q7" H 14550 8500 50  0000 L CNN
+F 1 "IRF830" H 14556 8505 50  0001 L CNN
+F 2 "valdiklio_footprints:TO-220-3_Vertical" H 14600 8475 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14350 8550 50  0001 L CNN
+	1    14350 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 8250 14450 8300
+Wire Wire Line
+	13150 8450 13350 8450
+Wire Wire Line
+	13350 8450 13350 8300
+Wire Wire Line
+	13350 8300 14300 8300
+Connection ~ 13150 8450
+Connection ~ 14450 8300
+Wire Wire Line
+	14450 8300 14450 8350
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R30
+U 1 1 5E11FEF1
+P 14100 8200
+F 0 "R30" V 14250 8100 50  0000 C CNN
+F 1 "1K0" V 14250 8300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14030 8200 50  0001 C CNN
+F 3 "~" H 14100 8200 50  0001 C CNN
+	1    14100 8200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13950 8200 13900 8200
+Wire Wire Line
+	13900 8200 13900 8050
+Connection ~ 13900 8050
+Wire Wire Line
+	13900 8050 14150 8050
+Wire Wire Line
+	14250 8200 14300 8200
+Wire Wire Line
+	14300 8200 14300 8300
+Connection ~ 14300 8300
+Wire Wire Line
+	14300 8300 14450 8300
+Wire Wire Line
+	14300 8800 14450 8800
+Wire Wire Line
+	14450 8800 14450 8750
+Wire Wire Line
+	14000 8800 13900 8800
+Wire Wire Line
+	13900 8800 13900 8550
+Connection ~ 13900 8550
+Wire Wire Line
+	13900 8550 14150 8550
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D13
+U 1 1 5E11FF07
+P 12900 7600
+F 0 "D13" H 13000 7500 50  0000 C CNN
+F 1 "UF4005" H 12750 7500 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 12900 7600 50  0001 C CNN
+F 3 "~" H 12900 7600 50  0001 C CNN
+	1    12900 7600
+	-1   0    0    1   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R33
+U 1 1 5E11FF0D
+P 14150 8800
+F 0 "R33" V 14050 8700 50  0000 C CNN
+F 1 "1K0" V 14050 8900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14080 8800 50  0001 C CNN
+F 3 "~" H 14150 8800 50  0001 C CNN
+	1    14150 8800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14450 5600 14950 5600
+Wire Wire Line
+	14950 5600 14950 7200
+Wire Wire Line
+	14950 8800 14450 8800
+Connection ~ 14450 5600
+Connection ~ 14450 8800
+Wire Wire Line
+	14450 7200 14950 7200
+Connection ~ 14450 7200
+Connection ~ 14950 7200
+Wire Wire Line
+	14950 7200 14950 8800
+Wire Wire Line
+	14450 4650 14450 4550
+Wire Wire Line
+	14450 4550 14550 4550
+Wire Wire Line
+	15050 4550 15050 6150
+Wire Wire Line
+	14450 6250 14450 6150
+Wire Wire Line
+	14450 6150 14550 6150
+Connection ~ 15050 6150
+Wire Wire Line
+	15050 6150 15050 7750
+Wire Wire Line
+	15050 7750 14850 7750
+Wire Wire Line
+	14450 7750 14450 7850
+Wire Wire Line
+	14450 5100 14800 5100
+Wire Wire Line
+	14450 6700 14800 6700
+Wire Wire Line
+	14450 8300 14800 8300
+Text Label 14800 5100 2    50   ~ 0
+PHA
+Text Label 14800 6700 2    50   ~ 0
+PHB
+Text Label 14800 8300 2    50   ~ 0
+PHC
+Wire Wire Line
+	14300 5600 14450 5600
+Wire Wire Line
+	14300 7200 14450 7200
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R_US-Device R35
+U 1 1 5EBBF51B
+P 14700 4550
+F 0 "R35" V 14600 4450 50  0000 C CNN
+F 1 "R_US" V 14586 4550 50  0001 C CNN
+F 2 "" V 14740 4540 50  0001 C CNN
+F 3 "~" H 14700 4550 50  0001 C CNN
+	1    14700 4550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14850 4550 15050 4550
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R_US-Device R36
+U 1 1 5EBC0B85
+P 14700 6150
+F 0 "R36" V 14600 6050 50  0000 C CNN
+F 1 "R_US" V 14586 6150 50  0001 C CNN
+F 2 "" V 14740 6140 50  0001 C CNN
+F 3 "~" H 14700 6150 50  0001 C CNN
+	1    14700 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14850 6150 15050 6150
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R_US-Device R37
+U 1 1 5EBC0C64
+P 14700 7750
+F 0 "R37" V 14600 7650 50  0000 C CNN
+F 1 "R_US" V 14586 7750 50  0001 C CNN
+F 2 "" V 14740 7740 50  0001 C CNN
+F 3 "~" H 14700 7750 50  0001 C CNN
+	1    14700 7750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14550 7750 14450 7750
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR012
+U 1 1 5E7D3865
+P 6900 4050
+F 0 "#PWR012" H 6900 3800 50  0001 C CNN
+F 1 "GND" H 6905 3877 50  0001 C CNN
+F 2 "" H 6900 4050 50  0001 C CNN
+F 3 "" H 6900 4050 50  0001 C CNN
+	1    6900 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11200 3100 11600 3100
+Wire Wire Line
+	11200 2650 11450 2650
+Wire Wire Line
+	11200 3650 11750 3650
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R19
+U 1 1 5DC172E8
+P 12000 2650
+F 0 "R19" V 11900 2550 50  0000 C CNN
+F 1 "1k0" V 11900 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11930 2650 50  0001 C CNN
+F 3 "~" H 12000 2650 50  0001 C CNN
+	1    12000 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12150 2650 12850 2650
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R20
+U 1 1 5DC18D6D
+P 12000 3100
+F 0 "R20" V 11900 3000 50  0000 C CNN
+F 1 "1k0" V 11900 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11930 3100 50  0001 C CNN
+F 3 "~" H 12000 3100 50  0001 C CNN
+	1    12000 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12150 3100 12250 3100
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R21
+U 1 1 5DC18FBE
+P 12000 3650
+F 0 "R21" V 11900 3550 50  0000 C CNN
+F 1 "1k0" V 11900 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11930 3650 50  0001 C CNN
+F 3 "~" H 12000 3650 50  0001 C CNN
+	1    12000 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12150 3650 13550 3650
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D8
+U 1 1 5DC19EA3
+P 11450 2400
+F 0 "D8" V 11350 2250 50  0000 R CNN
+F 1 "LL4148" V 11450 2300 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 11450 2400 50  0001 C CNN
+F 3 "~" H 11450 2400 50  0001 C CNN
+	1    11450 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D9
+U 1 1 5DC1B6CD
+P 11600 2400
+F 0 "D9" V 11150 2450 50  0000 R CNN
+F 1 "LL4148" V 11250 2600 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 11600 2400 50  0001 C CNN
+F 3 "~" H 11600 2400 50  0001 C CNN
+	1    11600 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D10
+U 1 1 5DC1BA34
+P 11750 2400
+F 0 "D10" V 11650 2600 50  0000 R CNN
+F 1 "LL4148" V 11750 2800 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 11750 2400 50  0001 C CNN
+F 3 "~" H 11750 2400 50  0001 C CNN
+	1    11750 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11450 2550 11450 2650
+Connection ~ 11450 2650
+Wire Wire Line
+	11450 2650 11850 2650
+Wire Wire Line
+	11600 2550 11600 3100
+Connection ~ 11600 3100
+Wire Wire Line
+	11600 3100 11850 3100
+Wire Wire Line
+	11750 2550 11750 3650
+Connection ~ 11750 3650
+Wire Wire Line
+	11750 3650 11850 3650
+Wire Wire Line
+	11450 2250 11450 2150
+Wire Wire Line
+	11450 2150 11600 2150
+Wire Wire Line
+	11750 2150 11750 2250
+Wire Wire Line
+	11600 2250 11600 2150
+Connection ~ 11600 2150
+Wire Wire Line
+	11600 2150 11750 2150
+Wire Wire Line
+	11450 2150 11200 2150
+Connection ~ 11450 2150
+Text Label 11200 2150 0    50   ~ 0
+3VDC
+Text Label 14950 4550 0    50   ~ 0
+VB
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R_US-Device R34
+U 1 1 5DD018A3
+P 14450 9000
+F 0 "R34" H 14300 8950 50  0000 C CNN
+F 1 "0R1" H 14300 9050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 14490 8990 50  0001 C CNN
+F 3 "~" H 14450 9000 50  0001 C CNN
+	1    14450 9000
+	-1   0    0    1   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR030
+U 1 1 5DD02191
+P 14450 9150
+F 0 "#PWR030" H 14450 8900 50  0001 C CNN
+F 1 "GND" H 14455 8977 50  0001 C CNN
+F 2 "" H 14450 9150 50  0001 C CNN
+F 3 "" H 14450 9150 50  0001 C CNN
+	1    14450 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 8850 14450 8800
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R38
+U 1 1 5DA08434
+P 14950 9050
+F 0 "R38" H 14800 9000 50  0000 C CNN
+F 1 "1K0" H 14800 9100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14880 9050 50  0001 C CNN
+F 3 "~" H 14950 9050 50  0001 C CNN
+	1    14950 9050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14950 8900 14950 8800
+Connection ~ 14950 8800
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R39
+U 1 1 5DA2FE0D
+P 14950 9500
+F 0 "R39" H 14800 9450 50  0000 C CNN
+F 1 "1K0" H 14800 9550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 14880 9500 50  0001 C CNN
+F 3 "~" H 14950 9500 50  0001 C CNN
+	1    14950 9500
+	-1   0    0    1   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR033
+U 1 1 5DA3013E
+P 14950 9650
+F 0 "#PWR033" H 14950 9400 50  0001 C CNN
+F 1 "GND" H 14955 9477 50  0001 C CNN
+F 2 "" H 14950 9650 50  0001 C CNN
+F 3 "" H 14950 9650 50  0001 C CNN
+	1    14950 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14950 9200 14950 9250
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C24
+U 1 1 5DA57752
+P 15350 9500
+F 0 "C24" H 15150 9400 50  0000 L CNN
+F 1 "1n0" H 15100 9500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 15388 9350 50  0001 C CNN
+F 3 "~" H 15350 9500 50  0001 C CNN
+	1    15350 9500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14950 9250 15350 9250
+Wire Wire Line
+	15350 9250 15350 9350
+Connection ~ 14950 9250
+Wire Wire Line
+	14950 9250 14950 9350
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR035
+U 1 1 5DA7F710
+P 15350 9650
+F 0 "#PWR035" H 15350 9400 50  0001 C CNN
+F 1 "GND" H 15355 9477 50  0001 C CNN
+F 2 "" H 15350 9650 50  0001 C CNN
+F 3 "" H 15350 9650 50  0001 C CNN
+	1    15350 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14950 9250 14700 9250
+Wire Wire Line
+	14700 9250 14700 9400
+Wire Wire Line
+	14700 9400 14250 9400
+Text Label 13550 9400 0    50   ~ 0
+CURR
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR013
+U 1 1 5DADEADB
+P 6900 4250
+F 0 "#PWR013" H 6900 4000 50  0001 C CNN
+F 1 "GND" H 6905 4077 50  0001 C CNN
+F 2 "" H 6900 4250 50  0001 C CNN
+F 3 "" H 6900 4250 50  0001 C CNN
+	1    6900 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH2
+U 1 1 5DC00EE7
+P 11250 9000
+F 0 "TH2" H 11348 9046 50  0000 L CNN
+F 1 "10K" H 11348 8955 50  0000 L CNN
+F 2 "" H 11250 9050 50  0001 C CNN
+F 3 "~" H 11250 9050 50  0001 C CNN
+	1    11250 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R18
+U 1 1 5DC07730
+P 11250 9450
+F 0 "R18" H 11100 9400 50  0000 C CNN
+F 1 "1K0" H 11100 9500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 11180 9450 50  0001 C CNN
+F 3 "~" H 11250 9450 50  0001 C CNN
+	1    11250 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR019
+U 1 1 5DC07BCE
+P 11250 9600
+F 0 "#PWR019" H 11250 9350 50  0001 C CNN
+F 1 "GND" H 11255 9427 50  0001 C CNN
+F 2 "" H 11250 9600 50  0001 C CNN
+F 3 "" H 11250 9600 50  0001 C CNN
+	1    11250 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11250 9150 11250 9250
+Wire Wire Line
+	11250 8850 11250 8750
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C14
+U 1 1 5DC5C9E5
+P 11650 9450
+F 0 "C14" H 11400 9400 50  0000 L CNN
+F 1 "100n" H 11300 9500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 11688 9300 50  0001 C CNN
+F 3 "~" H 11650 9450 50  0001 C CNN
+	1    11650 9450
+	-1   0    0    1   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR020
+U 1 1 5DC5CFCB
+P 11650 9600
+F 0 "#PWR020" H 11650 9350 50  0001 C CNN
+F 1 "GND" H 11655 9427 50  0001 C CNN
+F 2 "" H 11650 9600 50  0001 C CNN
+F 3 "" H 11650 9600 50  0001 C CNN
+	1    11650 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 9300 11650 9250
+Wire Wire Line
+	11650 9250 11250 9250
+Connection ~ 11250 9250
+Wire Wire Line
+	11250 9250 11250 9300
+Wire Wire Line
+	11250 9250 10850 9250
+Text Label 10850 8750 0    50   ~ 0
+3VDC
+Text Label 10850 9250 0    50   ~ 0
+TEMP
+Wire Wire Line
+	11250 8750 10850 8750
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D20
+U 1 1 5DD66D79
+P 14000 9250
+F 0 "D20" H 13950 9350 50  0000 R CNN
+F 1 "LL4148" H 14300 9350 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 14000 9250 50  0001 C CNN
+F 3 "~" H 14000 9250 50  0001 C CNN
+	1    14000 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 9250 14250 9250
+Wire Wire Line
+	14250 9250 14250 9400
+Connection ~ 14250 9400
+Wire Wire Line
+	14250 9400 13550 9400
+Wire Wire Line
+	13850 9250 13550 9250
+Text Label 13550 9250 0    50   ~ 0
+3VDC
+Text Label 8500 3050 2    50   ~ 0
+3VDC
+Text Label 8500 2950 2    50   ~ 0
+~NRST
+Text Label 6900 3550 0    50   ~ 0
+~NRST
+Connection ~ 7300 3550
+Wire Wire Line
+	7300 3550 6900 3550
+Text Label 8500 2850 2    50   ~ 0
+SWDCLK
+Text Label 8500 2650 2    50   ~ 0
+SWDIO
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR017
+U 1 1 5DED6BCA
+P 8150 3150
+F 0 "#PWR017" H 8150 2900 50  0001 C CNN
+F 1 "GND" H 8155 2977 50  0001 C CNN
+F 2 "" H 8150 3150 50  0001 C CNN
+F 3 "" H 8150 3150 50  0001 C CNN
+	1    8150 3150
+	0    -1   -1   0   
+$EndComp
+Connection ~ 8050 3150
+Wire Wire Line
+	8050 3150 8150 3150
+Wire Wire Line
+	8050 3150 7950 3150
+Wire Wire Line
+	8050 2750 8050 3150
+Wire Wire Line
+	7950 2750 8050 2750
+Wire Wire Line
+	7950 2650 8500 2650
+Wire Wire Line
+	7950 2850 8500 2850
+Wire Wire Line
+	7950 2950 8500 2950
+Wire Wire Line
+	7950 3050 8500 3050
+$Comp
+L mech:ISP_SWD_Connector J3
+U 1 1 5DDC24FE
+P 7950 2650
+F 0 "J3" H 7733 2783 50  0000 C CNN
+F 1 "ISP_SWD_Connector" H 7733 2784 50  0001 C CNN
+F 2 "mech:ISP_SWD_Connector" H 8650 2450 50  0001 C CNN
+F 3 "http://katalog.we-online.com/em/datasheet/69036718xx72.pdf" H 9350 2250 50  0001 C CNN
+F 4 "ZAJ071" H 8400 2650 60  0001 C CNN "ventcode"
+F 5 "-" H 9350 2450 60  0001 C CNN "Nominalas"
+F 6 "0.12" H 8300 2350 60  0001 C CNN "Kaina"
+F 7 "-" H 8500 2350 60  0001 C CNN "Korpusas"
+F 8 "4" H 8150 3250 60  0001 C CNN "Aukstis"
+F 9 "Micro-MaTch TE CONNECTIVITY 215079-6" H 8250 3350 60  0001 C CNN "Marke"
+F 10 "Jungtis" H 8350 3450 60  0001 C CNN "Pavadinimas"
+F 11 "215079-6" H 8450 3550 60  0001 C CNN "Gamintojo Kodas"
+F 12 "https://www.tme.eu/lt/details/amp-7-215079-6/micro-match-jungtys-127-mm/te-connectivity/215079-6/" H 8550 3650 60  0001 C CNN "Nuoroda"
+F 13 "DIP" H 8650 3750 60  0001 C CNN "Korpuso tipas"
+F 14 "-" H 8750 3850 60  0001 C CNN "Parametras"
+F 15 "-" H 8850 3950 60  0001 C CNN "Komentaras"
+	1    7950 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4250 7400 4250
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R16
+U 1 1 5DADDDEC
+P 7050 4250
+F 0 "R16" V 7150 4150 50  0000 C CNN
+F 1 "100k" V 7150 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 4250 50  0001 C CNN
+F 3 "~" H 7050 4250 50  0001 C CNN
+	1    7050 4250
+	0    1    1    0   
+$EndComp
+Connection ~ 7300 4050
+Wire Wire Line
+	7200 4050 7300 4050
+$Comp
+L variklio_valdiklis_stm32F103-rescue:C-Device C10
+U 1 1 5E7D28D6
+P 7050 4050
+F 0 "C10" V 7200 4150 50  0000 L CNN
+F 1 "100n" V 7200 3900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7088 3900 50  0001 C CNN
+F 3 "~" H 7050 4050 50  0001 C CNN
+	1    7050 4050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7300 3750
+Wire Wire Line
+	7300 3550 7300 3750
+Wire Wire Line
+	7450 3550 7300 3550
+Wire Wire Line
+	7900 3550 7900 3750
+Wire Wire Line
+	7750 3550 7900 3550
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D7
+U 1 1 5E78758E
+P 7600 3550
+F 0 "D7" H 7750 3450 50  0000 R CNN
+F 1 "LL4148" H 7550 3450 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 7600 3550 50  0001 C CNN
+F 3 "~" H 7600 3550 50  0001 C CNN
+	1    7600 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 4050 7400 4050
+Wire Wire Line
+	7300 3750 7300 4050
+Wire Wire Line
+	7450 3750 7300 3750
+Connection ~ 7900 3750
+Wire Wire Line
+	7750 3750 7900 3750
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R17
+U 1 1 5E73E369
+P 7600 3750
+F 0 "R17" V 7500 3650 50  0000 C CNN
+F 1 "10k" V 7500 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7530 3750 50  0001 C CNN
+F 3 "~" H 7600 3750 50  0001 C CNN
+	1    7600 3750
+	0    1    1    0   
+$EndComp
+Text Label 8600 3750 2    50   ~ 0
+3VDC
+Connection ~ 8300 3750
+Wire Wire Line
+	8300 3750 8600 3750
+Text Label 9200 5650 2    50   ~ 0
+SPEED
+Wire Wire Line
+	8700 5650 9200 5650
+Text Label 9200 5550 2    50   ~ 0
+TEMP
+Wire Wire Line
+	8700 5550 9200 5550
+Text Label 9200 5450 2    50   ~ 0
+CURR
+Wire Wire Line
+	8700 5450 9200 5450
+Text Label 9200 6550 2    50   ~ 0
+SWDCLK
+Text Label 9200 6450 2    50   ~ 0
+SWDIO
+Wire Wire Line
+	8700 6550 9200 6550
+Wire Wire Line
+	8700 6450 9200 6450
+Text Label 6900 4750 0    50   ~ 0
+LED
+Wire Wire Line
+	7400 4750 6900 4750
+Connection ~ 8000 3750
+Wire Wire Line
+	7900 3750 8000 3750
+Wire Wire Line
+	7900 3850 7900 3750
+Wire Wire Line
+	8200 3750 8100 3750
+Connection ~ 8200 3750
+Wire Wire Line
+	8200 3850 8200 3750
+Wire Wire Line
+	8100 3750 8000 3750
+Connection ~ 8100 3750
+Wire Wire Line
+	8100 3850 8100 3750
+Wire Wire Line
+	8000 3750 8000 3850
+Wire Wire Line
+	8300 3750 8200 3750
+Wire Wire Line
+	8300 3850 8300 3750
+Wire Wire Line
+	8200 6850 8200 6900
+Wire Wire Line
+	8100 6850 8100 6900
+Wire Wire Line
+	8000 6850 8000 6900
+Wire Wire Line
+	7900 6850 7900 6900
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR018
+U 1 1 5E2CCE43
+P 8200 6900
+F 0 "#PWR018" H 8200 6650 50  0001 C CNN
+F 1 "GND" H 8205 6727 50  0001 C CNN
+F 2 "" H 8200 6900 50  0001 C CNN
+F 3 "" H 8200 6900 50  0001 C CNN
+	1    8200 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR016
+U 1 1 5E2CCBDE
+P 8100 6900
+F 0 "#PWR016" H 8100 6650 50  0001 C CNN
+F 1 "GND" H 8105 6727 50  0001 C CNN
+F 2 "" H 8100 6900 50  0001 C CNN
+F 3 "" H 8100 6900 50  0001 C CNN
+	1    8100 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR015
+U 1 1 5E2CCA21
+P 8000 6900
+F 0 "#PWR015" H 8000 6650 50  0001 C CNN
+F 1 "GND" H 8005 6727 50  0001 C CNN
+F 2 "" H 8000 6900 50  0001 C CNN
+F 3 "" H 8000 6900 50  0001 C CNN
+	1    8000 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR014
+U 1 1 5E2CC035
+P 7900 6900
+F 0 "#PWR014" H 7900 6650 50  0001 C CNN
+F 1 "GND" H 7905 6727 50  0001 C CNN
+F 2 "" H 7900 6900 50  0001 C CNN
+F 3 "" H 7900 6900 50  0001 C CNN
+	1    7900 6900
+	1    0    0    -1  
+$EndComp
+Text Label 6900 5850 0    50   ~ 0
+RXD
+Text Label 6900 5750 0    50   ~ 0
+TXD
+Wire Wire Line
+	7400 5750 6900 5750
+Wire Wire Line
+	7400 5850 6900 5850
+Text Label 6900 5250 0    50   ~ 0
+~CHC
+Text Label 6900 5150 0    50   ~ 0
+~CHB
+Text Label 9200 5850 2    50   ~ 0
+~CHA
+Text Label 9200 6150 2    50   ~ 0
+CHC
+Text Label 9200 6050 2    50   ~ 0
+CHB
+Text Label 9200 5950 2    50   ~ 0
+CHA
+Wire Wire Line
+	8700 6150 9200 6150
+Wire Wire Line
+	8700 6050 9200 6050
+Wire Wire Line
+	8700 5950 9200 5950
+Wire Wire Line
+	7400 5250 6900 5250
+Wire Wire Line
+	7400 5150 6900 5150
+Wire Wire Line
+	8700 5850 9200 5850
+Text Label 9200 5750 2    50   ~ 0
+OUT_BRK
+Wire Wire Line
+	8700 5750 9200 5750
+Text Label 9200 5350 2    50   ~ 0
+SC
+Text Label 9200 5250 2    50   ~ 0
+SB
+Text Label 9200 5150 2    50   ~ 0
+SA
+Wire Wire Line
+	8700 5350 9200 5350
+Wire Wire Line
+	8700 5250 9200 5250
+Wire Wire Line
+	8700 5150 9200 5150
 $Comp
 L stm32f103c8tx:STM32F103C8Tx U7
 U 1 1 5DEB1DA7
@@ -245,1909 +1676,1137 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    8100 5350
 	1    0    0    -1  
 $EndComp
+Connection ~ 2200 9950
 Wire Wire Line
-	8700 5150 9200 5150
-Wire Wire Line
-	8700 5250 9200 5250
-Wire Wire Line
-	8700 5350 9200 5350
-Text Label 9200 5150 2    50   ~ 0
-SA
-Text Label 9200 5250 2    50   ~ 0
-SB
-Text Label 9200 5350 2    50   ~ 0
-SC
-Wire Wire Line
-	8700 5750 9200 5750
-Text Label 9200 5750 2    50   ~ 0
-OUT_BRK
-Wire Wire Line
-	8700 5850 9200 5850
-Wire Wire Line
-	7400 5150 6900 5150
-Wire Wire Line
-	7400 5250 6900 5250
-Wire Wire Line
-	8700 5950 9200 5950
-Wire Wire Line
-	8700 6050 9200 6050
-Wire Wire Line
-	8700 6150 9200 6150
-Text Label 9200 5950 2    50   ~ 0
-CHA
-Text Label 9200 6050 2    50   ~ 0
-CHB
-Text Label 9200 6150 2    50   ~ 0
-CHC
-Text Label 9200 5850 2    50   ~ 0
-~CHA
-Text Label 6900 5150 0    50   ~ 0
-~CHB
-Text Label 6900 5250 0    50   ~ 0
-~CHC
-Wire Wire Line
-	7400 5850 6900 5850
-Wire Wire Line
-	7400 5750 6900 5750
-Text Label 6900 5750 0    50   ~ 0
-TXD
-Text Label 6900 5850 0    50   ~ 0
-RXD
+	2200 10150 2200 9950
 $Comp
-L power:GND #PWR09
-U 1 1 5E2CC035
-P 7900 6900
-F 0 "#PWR09" H 7900 6650 50  0001 C CNN
-F 1 "GND" H 7905 6727 50  0001 C CNN
-F 2 "" H 7900 6900 50  0001 C CNN
-F 3 "" H 7900 6900 50  0001 C CNN
-	1    7900 6900
+L Device:Varistor RV1
+U 1 1 5DB0855A
+P 2200 10300
+F 0 "RV1" V 2050 10250 50  0000 L CNN
+F 1 "Varistor" V 2300 10150 50  0001 L CNN
+F 2 "Varistor:RV_Disc_D9mm_W4mm_P5mm" V 2130 10300 50  0001 C CNN
+F 3 "~" H 2200 10300 50  0001 C CNN
+	1    2200 10300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR010
-U 1 1 5E2CCA21
-P 8000 6900
-F 0 "#PWR010" H 8000 6650 50  0001 C CNN
-F 1 "GND" H 8005 6727 50  0001 C CNN
-F 2 "" H 8000 6900 50  0001 C CNN
-F 3 "" H 8000 6900 50  0001 C CNN
-	1    8000 6900
-	1    0    0    -1  
+L Device:L_Core_Iron L2
+U 1 1 5DB13196
+P 5050 9950
+F 0 "L2" V 5150 9950 50  0000 C CNN
+F 1 "1mH/280mA" V 5000 9950 39  0000 C CNN
+F 2 "Inductor_THT:L_Radial_D7.8mm_P5.00mm_Fastron_07HCP" H 5050 9950 50  0001 C CNN
+F 3 "~" H 5050 9950 50  0001 C CNN
+	1    5050 9950
+	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR011
-U 1 1 5E2CCBDE
-P 8100 6900
-F 0 "#PWR011" H 8100 6650 50  0001 C CNN
-F 1 "GND" H 8105 6727 50  0001 C CNN
-F 2 "" H 8100 6900 50  0001 C CNN
-F 3 "" H 8100 6900 50  0001 C CNN
-	1    8100 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5E2CCE43
-P 8200 6900
-F 0 "#PWR012" H 8200 6650 50  0001 C CNN
-F 1 "GND" H 8205 6727 50  0001 C CNN
-F 2 "" H 8200 6900 50  0001 C CNN
-F 3 "" H 8200 6900 50  0001 C CNN
-	1    8200 6900
-	1    0    0    -1  
+L Device:Fuse F1
+U 1 1 5DA078EB
+P 1950 9950
+F 0 "F1" V 1850 9950 50  0000 C CNN
+F 1 "3A" V 2050 9950 50  0000 C CNN
+F 2 "Fuse:Fuseholder_TR5_Littelfuse_No560_No460" V 1880 9950 50  0001 C CNN
+F 3 "~" H 1950 9950 50  0001 C CNN
+	1    1950 9950
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7900 6850 7900 6900
-Wire Wire Line
-	8000 6850 8000 6900
-Wire Wire Line
-	8100 6850 8100 6900
-Wire Wire Line
-	8200 6850 8200 6900
-Wire Wire Line
-	8300 3850 8300 3750
-Wire Wire Line
-	8300 3750 8200 3750
-Wire Wire Line
-	8000 3750 8000 3850
-Wire Wire Line
-	8100 3850 8100 3750
-Connection ~ 8100 3750
-Wire Wire Line
-	8100 3750 8000 3750
-Wire Wire Line
-	8200 3850 8200 3750
-Connection ~ 8200 3750
-Wire Wire Line
-	8200 3750 8100 3750
-Wire Wire Line
-	7900 3850 7900 3750
-Wire Wire Line
-	7900 3750 8000 3750
-Connection ~ 8000 3750
-Wire Wire Line
-	7400 4750 6900 4750
-Text Label 6900 4750 0    50   ~ 0
-LED
-Wire Wire Line
-	8700 6450 9200 6450
-Wire Wire Line
-	8700 6550 9200 6550
-Text Label 9200 6450 2    50   ~ 0
-SWDIO
-Text Label 9200 6550 2    50   ~ 0
-SWDCLK
+	6850 10700 6850 10750
 $Comp
-L Driver_FET:IR2101 U8
-U 1 1 5DA2CAE6
-P 13050 5250
-F 0 "U8" H 12900 5700 50  0000 C CNN
-F 1 "IR2101" H 13250 5700 50  0000 C CNN
-F 2 "" H 13050 5250 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 13050 5250 50  0001 C CNN
-	1    13050 5250
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR011
+U 1 1 5E8455A4
+P 6850 10750
+F 0 "#PWR011" H 6850 10500 50  0001 C CNN
+F 1 "GND" H 6855 10577 50  0001 C CNN
+F 2 "" H 6850 10750 50  0001 C CNN
+F 3 "" H 6850 10750 50  0001 C CNN
+	1    6850 10750
 	1    0    0    -1  
 $EndComp
+Text Label 1200 9150 0    50   ~ 0
+ACN
+Text Label 1200 8350 0    50   ~ 0
+ACL
+Text Label 8300 9950 2    50   ~ 0
+3VDC
+Wire Wire Line
+	6050 10700 6850 10700
+Connection ~ 6050 10700
+Wire Wire Line
+	6050 10550 6050 10700
+Connection ~ 6050 10100
+Wire Wire Line
+	6050 10250 6050 10100
 $Comp
-L Device:C C13
-U 1 1 5DA2E65D
-P 13550 5250
-F 0 "C13" H 13400 5150 50  0000 L CNN
-F 1 "1.0uFx50V" H 13050 5250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 13588 5100 50  0001 C CNN
-F 3 "~" H 13550 5250 50  0001 C CNN
-	1    13550 5250
+L variklio_valdiklis_stm32F103-rescue:C-Device C9
+U 1 1 5E08BE62
+P 6050 10400
+F 0 "C9" H 5800 10350 50  0000 L CNN
+F 1 "100n" H 5700 10450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6088 10250 50  0001 C CNN
+F 3 "~" H 6050 10400 50  0001 C CNN
+	1    6050 10400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	13350 4950 13550 4950
+	7550 10700 8000 10700
+Connection ~ 7550 10700
 Wire Wire Line
-	13550 4950 13550 5100
+	7550 10550 7550 10700
 Wire Wire Line
-	13350 5450 13550 5450
+	7550 9950 8000 9950
+Connection ~ 7550 9950
 Wire Wire Line
-	13550 5450 13550 5400
-Wire Wire Line
-	13150 4600 13050 4600
-Wire Wire Line
-	13050 4600 13050 4750
-Wire Wire Line
-	13450 4600 13550 4600
-Wire Wire Line
-	13550 4600 13550 4950
-Connection ~ 13550 4950
+	7550 10250 7550 9950
 $Comp
-L power:GND #PWR017
-U 1 1 5DADA7D2
-P 13050 5800
-F 0 "#PWR017" H 13050 5550 50  0001 C CNN
-F 1 "GND" H 13055 5627 50  0001 C CNN
-F 2 "" H 13050 5800 50  0001 C CNN
-F 3 "" H 13050 5800 50  0001 C CNN
-	1    13050 5800
+L variklio_valdiklis_stm32F103-rescue:C-Device C12
+U 1 1 5DE88CE0
+P 7550 10400
+F 0 "C12" H 7400 10200 50  0000 L CNN
+F 1 "100n" H 7300 10300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7588 10250 50  0001 C CNN
+F 3 "~" H 7550 10400 50  0001 C CNN
+	1    7550 10400
+	-1   0    0    1   
+$EndComp
+Connection ~ 7300 10700
+Wire Wire Line
+	8000 10700 8000 10550
+Wire Wire Line
+	7300 10700 7550 10700
+Wire Wire Line
+	8000 9950 8300 9950
+Connection ~ 8000 9950
+Wire Wire Line
+	8000 10250 8000 9950
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C13
+U 1 1 5DDBDB69
+P 8000 10400
+F 0 "C13" H 8200 10450 50  0000 L CNN
+F 1 "100x16V" H 8200 10350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 8038 10250 50  0001 C CNN
+F 3 "~" H 8000 10400 50  0001 C CNN
+	1    8000 10400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13050 5800 13050 5750
+	7300 10100 7300 10250
 Wire Wire Line
-	13050 4600 12600 4600
-Connection ~ 13050 4600
+	7250 10100 7300 10100
+Connection ~ 6850 10700
+Wire Wire Line
+	7300 10700 7300 10550
+Wire Wire Line
+	6850 10700 7300 10700
 $Comp
-L Device:R R16
-U 1 1 5DB31922
-P 13950 5050
-F 0 "R16" V 14050 4950 50  0000 C CNN
-F 1 "R" V 13850 5050 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 13880 5050 50  0001 C CNN
-F 3 "~" H 13950 5050 50  0001 C CNN
-	1    13950 5050
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R17
-U 1 1 5DB3211F
-P 13950 5550
-F 0 "R17" V 13850 5450 50  0000 C CNN
-F 1 "R" V 13850 5550 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 13880 5550 50  0001 C CNN
-F 3 "~" H 13950 5550 50  0001 C CNN
-	1    13950 5550
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13800 5050 13750 5050
-Wire Wire Line
-	13800 5550 13750 5550
-Text Label 12300 4600 0    50   ~ 0
-VCC
-Wire Wire Line
-	12750 5250 12300 5250
-Wire Wire Line
-	12750 5350 12300 5350
-Text Label 12300 5250 0    50   ~ 0
-CHA
-Text Label 12300 5350 0    50   ~ 0
-~CHA
-$Comp
-L Device:C C10
-U 1 1 5DCC4A8C
-P 12600 4850
-F 0 "C10" H 12750 4800 50  0000 L CNN
-F 1 "C" H 12300 4950 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 12638 4700 50  0001 C CNN
-F 3 "~" H 12600 4850 50  0001 C CNN
-	1    12600 4850
+L variklio_valdiklis_stm32F103-rescue:C-Device C11
+U 1 1 5DD7A77F
+P 7300 10400
+F 0 "C11" H 7500 10350 50  0000 L CNN
+F 1 "100n" H 7450 10450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7338 10250 50  0001 C CNN
+F 3 "~" H 7300 10400 50  0001 C CNN
+	1    7300 10400
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12600 4700 12600 4600
-Connection ~ 12600 4600
+	7250 9950 7550 9950
 Wire Wire Line
-	12600 4600 12300 4600
+	5550 10700 6050 10700
+Wire Wire Line
+	6850 10700 6850 10300
+Wire Wire Line
+	6050 10100 6050 9950
+Wire Wire Line
+	6150 10100 6050 10100
 $Comp
-L power:GND #PWR013
-U 1 1 5DD4B4F2
-P 12600 5000
-F 0 "#PWR013" H 12600 4750 50  0001 C CNN
-F 1 "GND" H 12605 4827 50  0001 C CNN
-F 2 "" H 12600 5000 50  0001 C CNN
-F 3 "" H 12600 5000 50  0001 C CNN
-	1    12600 5000
-	1    0    0    -1  
+L variklio_valdiklis_stm32F103-rescue:R-Device R15
+U 1 1 5DCB9202
+P 6300 10100
+F 0 "R15" V 6200 10200 50  0000 C CNN
+F 1 "10k" V 6200 10000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6230 10100 50  0001 C CNN
+F 3 "~" H 6300 10100 50  0001 C CNN
+	1    6300 10100
+	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D D10
-U 1 1 5DD78104
-P 13950 5700
-F 0 "D10" H 13900 5600 50  0000 R CNN
-F 1 "LL4148" H 14250 5600 50  0000 R CNN
-F 2 "" H 13950 5700 50  0001 C CNN
-F 3 "~" H 13950 5700 50  0001 C CNN
-	1    13950 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13800 5700 13750 5700
-Wire Wire Line
-	13750 5700 13750 5550
-Connection ~ 13750 5550
-Wire Wire Line
-	13750 5550 13350 5550
-Wire Wire Line
-	14100 5700 14150 5700
-Wire Wire Line
-	14150 5700 14150 5550
-Wire Wire Line
-	14150 5550 14100 5550
-Wire Wire Line
-	14150 5550 14300 5550
-Connection ~ 14150 5550
-$Comp
-L Device:D D9
-U 1 1 5DE04B97
-P 13950 4900
-F 0 "D9" H 13900 5000 50  0000 R CNN
-F 1 "LL4148" H 14250 5000 50  0000 R CNN
-F 2 "" H 13950 4900 50  0001 C CNN
-F 3 "~" H 13950 4900 50  0001 C CNN
-	1    13950 4900
+L variklio_valdiklis_stm32F103-rescue:USTAB_SIP21106-DT-33-disc U6
+U 1 1 5DCB7137
+P 6850 10000
+F 0 "U6" H 6850 10317 50  0000 C CNN
+F 1 "SIP21106" H 6850 10226 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8600 9800 50  0001 C CIN
+F 3 "" H 8950 9900 50  0001 C CNN
+F 4 "*" H 9100 9700 60  0001 C CNN "ventcode"
+F 5 "3.3V" H 8650 9700 60  0001 C CNN "Nominalas"
+F 6 "0" H 8250 9700 60  0001 C CNN "Kaina"
+F 7 "SMD" H 10000 10000 60  0001 C CNN "Korpuso tipas"
+F 8 "Itampos stabilizatorius" H 8500 10000 60  0001 C CNN "Pavadinimas"
+F 9 "SIP21106-DT-33-E3" H 8450 10100 60  0001 C CNN "Gamintojo Kodas"
+F 10 "TSOT23-5L" H 9500 10000 60  0001 C CNN "Korpusas"
+F 11 "1.7" H 8050 9700 60  0001 C CNN "Aukstis"
+F 12 "SIP21106" H 8200 10200 60  0001 C CNN "Marke"
+F 13 "-" H 8400 9700 60  0001 C CNN "Nuoroda"
+F 14 "-" H 8900 9700 60  0001 C CNN "Parametras"
+F 15 "Markiravimas N3" H 9700 9800 60  0001 C CNN "Komentaras"
+	1    6850 10000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13800 4900 13750 4900
+	2300 9950 2200 9950
 Wire Wire Line
-	13750 4900 13750 5050
-Connection ~ 13750 5050
-Wire Wire Line
-	13750 5050 13350 5050
-Wire Wire Line
-	14100 4900 14150 4900
-Wire Wire Line
-	14150 4900 14150 5050
-Wire Wire Line
-	14150 5050 14100 5050
-Wire Wire Line
-	14150 5050 14300 5050
-Connection ~ 14150 5050
+	2600 9950 2750 9950
 $Comp
-L Transistor_FET:IRF740 Q2
-U 1 1 5DF5607D
-P 14750 5050
-F 0 "Q2" H 14950 5000 50  0000 L CNN
-F 1 "IRF830" H 14956 5005 50  0001 L CNN
-F 2 "valdiklio_footprints:TO-220-3_Vertical" H 15000 4975 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14750 5050 50  0001 L CNN
-	1    14750 5050
+L variklio_valdiklis_stm32F103-rescue:R-Device R4
+U 1 1 5EAAEF23
+P 2450 9950
+F 0 "R4" V 2550 10050 50  0000 C CNN
+F 1 "8R2/2W" V 2350 9950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 2380 9950 50  0001 C CNN
+F 3 "~" H 2450 9950 50  0001 C CNN
+	1    2450 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D3
+U 1 1 5EA6EA07
+P 2950 10700
+F 0 "D3" H 2950 10800 50  0000 C CNN
+F 1 "LL4005" H 2950 10600 50  0000 C CNN
+F 2 "Diode_SMD:D_MELF" H 2950 10700 50  0001 C CNN
+F 3 "~" H 2950 10700 50  0001 C CNN
+	1    2950 10700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRF740 Q3
-U 1 1 5DF57558
-P 14750 5550
-F 0 "Q3" H 14950 5500 50  0000 L CNN
-F 1 "IRF830" H 14956 5505 50  0001 L CNN
-F 2 "valdiklio_footprints:TO-220-3_Vertical" H 15000 5475 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14750 5550 50  0001 L CNN
-	1    14750 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14850 5250 14850 5300
-Wire Wire Line
-	13550 5450 13750 5450
-Wire Wire Line
-	13750 5450 13750 5300
-Wire Wire Line
-	13750 5300 14700 5300
-Connection ~ 13550 5450
-Connection ~ 14850 5300
-Wire Wire Line
-	14850 5300 14850 5350
-$Comp
-L Device:R R22
-U 1 1 5DFBAEBF
-P 14500 5200
-F 0 "R22" V 14400 5100 50  0000 C CNN
-F 1 "1K0" V 14400 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 14430 5200 50  0001 C CNN
-F 3 "~" H 14500 5200 50  0001 C CNN
-	1    14500 5200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14350 5200 14300 5200
-Wire Wire Line
-	14300 5200 14300 5050
-Connection ~ 14300 5050
-Wire Wire Line
-	14300 5050 14550 5050
-Wire Wire Line
-	14650 5200 14700 5200
-Wire Wire Line
-	14700 5200 14700 5300
-Connection ~ 14700 5300
-Wire Wire Line
-	14700 5300 14850 5300
-Wire Wire Line
-	14850 5800 14850 5750
-Wire Wire Line
-	14400 5800 14300 5800
-Wire Wire Line
-	14300 5800 14300 5550
-Connection ~ 14300 5550
-Wire Wire Line
-	14300 5550 14550 5550
-$Comp
-L Device:D D6
-U 1 1 5DA82EB4
-P 13300 4600
-F 0 "D6" H 13400 4500 50  0000 C CNN
-F 1 "US1J" H 13150 4500 50  0000 C CNN
-F 2 "" H 13300 4600 50  0001 C CNN
-F 3 "~" H 13300 4600 50  0001 C CNN
-	1    13300 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R25
-U 1 1 5E02109A
-P 14550 5800
-F 0 "R25" V 14450 5700 50  0000 C CNN
-F 1 "1K0" V 14450 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 14480 5800 50  0001 C CNN
-F 3 "~" H 14550 5800 50  0001 C CNN
-	1    14550 5800
-	0    1    1    0   
-$EndComp
-$Comp
-L Driver_FET:IR2101 U9
-U 1 1 5E0CC088
-P 13050 6850
-F 0 "U9" H 12900 7300 50  0000 C CNN
-F 1 "IR2101" H 13250 7300 50  0000 C CNN
-F 2 "" H 13050 6850 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 13050 6850 50  0001 C CNN
-	1    13050 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C14
-U 1 1 5E0CC092
-P 13550 6850
-F 0 "C14" H 13400 6750 50  0000 L CNN
-F 1 "1.0uFx50V" H 13050 6850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 13588 6700 50  0001 C CNN
-F 3 "~" H 13550 6850 50  0001 C CNN
-	1    13550 6850
+L variklio_valdiklis_stm32F103-rescue:D-Device D2
+U 1 1 5EA6E24F
+P 2900 9950
+F 0 "D2" H 3000 9850 50  0000 C CNN
+F 1 "LL4005" H 2750 9850 50  0000 C CNN
+F 2 "Diode_SMD:D_MELF" H 2900 9950 50  0001 C CNN
+F 3 "~" H 2900 9950 50  0001 C CNN
+	1    2900 9950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	13350 6550 13550 6550
+	3250 9950 3050 9950
+Connection ~ 3250 9950
 Wire Wire Line
-	13550 6550 13550 6700
+	3250 10150 3250 9950
 Wire Wire Line
-	13350 7050 13550 7050
+	3250 10700 3100 10700
+Connection ~ 3250 10700
 Wire Wire Line
-	13550 7050 13550 7000
+	3250 10450 3250 10700
 Wire Wire Line
-	13150 6200 13050 6200
+	3750 10700 3250 10700
+Connection ~ 3750 10700
 Wire Wire Line
-	13050 6200 13050 6350
+	3750 10450 3750 10700
 Wire Wire Line
-	13450 6200 13550 6200
+	3750 9950 3650 9950
+Connection ~ 3750 9950
 Wire Wire Line
-	13550 6200 13550 6550
-Connection ~ 13550 6550
+	3750 10150 3750 9950
+Wire Wire Line
+	3350 9950 3250 9950
 $Comp
-L power:GND #PWR018
-U 1 1 5E0CC0A5
-P 13050 7400
-F 0 "#PWR018" H 13050 7150 50  0001 C CNN
-F 1 "GND" H 13055 7227 50  0001 C CNN
-F 2 "" H 13050 7400 50  0001 C CNN
-F 3 "" H 13050 7400 50  0001 C CNN
-	1    13050 7400
+L variklio_valdiklis_stm32F103-rescue:L-Device L1
+U 1 1 5E9EFE57
+P 3500 9950
+F 0 "L1" V 3600 10050 50  0000 C CNN
+F 1 "1mH" V 3600 9850 50  0000 C CNN
+F 2 "Inductor_SMD:L_Vishay_IHSM-3825" H 3500 9950 50  0001 C CNN
+F 3 "~" H 3500 9950 50  0001 C CNN
+	1    3500 9950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C2
+U 1 1 5E9EFBCE
+P 3250 10300
+F 0 "C2" H 2950 10350 50  0000 L CNN
+F 1 "4.7x400V" H 2800 10250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3288 10150 50  0001 C CNN
+F 3 "~" H 3250 10300 50  0001 C CNN
+	1    3250 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C5
+U 1 1 5E9EF72A
+P 3750 10300
+F 0 "C5" H 3850 10200 50  0000 L CNN
+F 1 "4.7x400V" H 3800 10100 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3788 10150 50  0001 C CNN
+F 3 "~" H 3750 10300 50  0001 C CNN
+	1    3750 10300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13050 7400 13050 7350
+	3850 9950 3750 9950
+Connection ~ 4750 10700
 Wire Wire Line
-	13050 6200 12600 6200
-Connection ~ 13050 6200
+	4750 10700 3750 10700
+Connection ~ 5550 10700
+Connection ~ 6050 9950
+Wire Wire Line
+	6050 9950 6450 9950
+Connection ~ 5300 10700
+Wire Wire Line
+	5550 10700 5550 10550
+Wire Wire Line
+	5300 10700 5550 10700
+Wire Wire Line
+	5550 9500 5650 9500
+Connection ~ 5550 9500
+Wire Wire Line
+	5550 10250 5550 9500
 $Comp
-L Device:R R18
-U 1 1 5E0CC0B2
-P 13950 6650
-F 0 "R18" V 14050 6550 50  0000 C CNN
-F 1 "R" V 13850 6650 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 13880 6650 50  0001 C CNN
-F 3 "~" H 13950 6650 50  0001 C CNN
-	1    13950 6650
+L variklio_valdiklis_stm32F103-rescue:D_Zener-Device D6
+U 1 1 5E93BD46
+P 5550 10400
+F 0 "D6" V 5450 10500 50  0000 L CNN
+F 1 "12V" V 5550 10500 50  0000 L CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5550 10400 50  0001 C CNN
+F 3 "~" H 5550 10400 50  0001 C CNN
+	1    5550 10400
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	5450 9500 5550 9500
+Wire Wire Line
+	6050 9500 6050 9300
+Connection ~ 6050 9500
+Wire Wire Line
+	5950 9500 6050 9500
+Wire Wire Line
+	5300 9950 6050 9950
 $Comp
-L Device:R R19
-U 1 1 5E0CC0BC
-P 13950 7150
-F 0 "R19" V 13850 7050 50  0000 C CNN
-F 1 "R" V 13850 7150 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 13880 7150 50  0001 C CNN
-F 3 "~" H 13950 7150 50  0001 C CNN
-	1    13950 7150
+L variklio_valdiklis_stm32F103-rescue:R-Device R14
+U 1 1 5E893B59
+P 5800 9500
+F 0 "R14" V 5900 9600 50  0000 C CNN
+F 1 "4k7" V 5900 9400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5730 9500 50  0001 C CNN
+F 3 "~" H 5800 9500 50  0001 C CNN
+	1    5800 9500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5300 9950
+Wire Wire Line
+	6050 9300 5450 9300
+Wire Wire Line
+	6050 9950 6050 9500
+Wire Wire Line
+	5300 10700 5300 10550
+Wire Wire Line
+	4750 10700 5300 10700
+Wire Wire Line
+	4750 10550 4750 10700
+Wire Wire Line
+	5300 9950 5300 10250
+Wire Wire Line
+	5200 9950 5300 9950
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C8
+U 1 1 5E7D527B
+P 5300 10400
+F 0 "C8" H 5000 10350 50  0000 L CNN
+F 1 "100x16V" H 4900 10250 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 5338 10250 50  0001 C CNN
+F 3 "~" H 5300 10400 50  0001 C CNN
+	1    5300 10400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 9950 4900 9950
+Connection ~ 4750 9950
+Wire Wire Line
+	4750 10250 4750 9950
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D5
+U 1 1 5E785171
+P 4750 10400
+F 0 "D5" V 4800 10100 50  0000 L CNN
+F 1 "UF4005" V 4900 10000 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4750 10400 50  0001 C CNN
+F 3 "~" H 4750 10400 50  0001 C CNN
+	1    4750 10400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	13800 6650 13750 6650
+	4750 9300 4350 9300
+Connection ~ 4750 9300
 Wire Wire Line
-	13800 7150 13750 7150
-Text Label 12300 6200 0    50   ~ 0
-VCC
+	4750 9550 4750 9300
 Wire Wire Line
-	12750 6850 12300 6850
+	4150 9500 4850 9500
 Wire Wire Line
-	12750 6950 12300 6950
-Text Label 12300 6850 0    50   ~ 0
-CHA
-Text Label 12300 6950 0    50   ~ 0
-~CHA
+	4750 9950 4750 9850
+Wire Wire Line
+	4650 9950 4750 9950
 $Comp
-L Device:C C11
-U 1 1 5E0CC0CD
-P 12600 6450
-F 0 "C11" H 12750 6400 50  0000 L CNN
-F 1 "C" H 12300 6550 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 12638 6300 50  0001 C CNN
-F 3 "~" H 12600 6450 50  0001 C CNN
-	1    12600 6450
+L variklio_valdiklis_stm32F103-rescue:C-Device C7
+U 1 1 5E73889A
+P 4750 9700
+F 0 "C7" H 4450 9650 50  0000 L CNN
+F 1 "100n" H 4350 9750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4788 9550 50  0001 C CNN
+F 3 "~" H 4750 9700 50  0001 C CNN
+	1    4750 9700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12600 6300 12600 6200
-Connection ~ 12600 6200
+	4150 9500 4150 9650
 Wire Wire Line
-	12600 6200 12300 6200
+	4350 9300 4350 9650
+Wire Wire Line
+	4850 9300 4750 9300
 $Comp
-L power:GND #PWR014
-U 1 1 5E0CC0DA
-P 12600 6600
-F 0 "#PWR014" H 12600 6350 50  0001 C CNN
-F 1 "GND" H 12605 6427 50  0001 C CNN
-F 2 "" H 12600 6600 50  0001 C CNN
-F 3 "" H 12600 6600 50  0001 C CNN
-	1    12600 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D12
-U 1 1 5E0CC0E4
-P 13950 7300
-F 0 "D12" H 13900 7200 50  0000 R CNN
-F 1 "LL4148" H 14250 7200 50  0000 R CNN
-F 2 "" H 13950 7300 50  0001 C CNN
-F 3 "~" H 13950 7300 50  0001 C CNN
-	1    13950 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13800 7300 13750 7300
-Wire Wire Line
-	13750 7300 13750 7150
-Connection ~ 13750 7150
-Wire Wire Line
-	13750 7150 13350 7150
-Wire Wire Line
-	14100 7300 14150 7300
-Wire Wire Line
-	14150 7300 14150 7150
-Wire Wire Line
-	14150 7150 14100 7150
-Wire Wire Line
-	14150 7150 14300 7150
-Connection ~ 14150 7150
-$Comp
-L Device:D D11
-U 1 1 5E0CC0F7
-P 13950 6500
-F 0 "D11" H 13900 6600 50  0000 R CNN
-F 1 "LL4148" H 14250 6600 50  0000 R CNN
-F 2 "" H 13950 6500 50  0001 C CNN
-F 3 "~" H 13950 6500 50  0001 C CNN
-	1    13950 6500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13800 6500 13750 6500
-Wire Wire Line
-	13750 6500 13750 6650
-Connection ~ 13750 6650
-Wire Wire Line
-	13750 6650 13350 6650
-Wire Wire Line
-	14100 6500 14150 6500
-Wire Wire Line
-	14150 6500 14150 6650
-Wire Wire Line
-	14150 6650 14100 6650
-Wire Wire Line
-	14150 6650 14300 6650
-Connection ~ 14150 6650
-$Comp
-L Transistor_FET:IRF740 Q4
-U 1 1 5E0CC10A
-P 14750 6650
-F 0 "Q4" H 14950 6600 50  0000 L CNN
-F 1 "IRF830" H 14956 6605 50  0001 L CNN
-F 2 "valdiklio_footprints:TO-220-3_Vertical" H 15000 6575 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14750 6650 50  0001 L CNN
-	1    14750 6650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF740 Q5
-U 1 1 5E0CC114
-P 14750 7150
-F 0 "Q5" H 14950 7100 50  0000 L CNN
-F 1 "IRF830" H 14956 7105 50  0001 L CNN
-F 2 "valdiklio_footprints:TO-220-3_Vertical" H 15000 7075 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14750 7150 50  0001 L CNN
-	1    14750 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14850 6850 14850 6900
-Wire Wire Line
-	13550 7050 13750 7050
-Wire Wire Line
-	13750 7050 13750 6900
-Wire Wire Line
-	13750 6900 14700 6900
-Connection ~ 13550 7050
-Connection ~ 14850 6900
-Wire Wire Line
-	14850 6900 14850 6950
-$Comp
-L Device:R R23
-U 1 1 5E0CC125
-P 14500 6800
-F 0 "R23" V 14400 6700 50  0000 C CNN
-F 1 "1K0" V 14400 6900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 14430 6800 50  0001 C CNN
-F 3 "~" H 14500 6800 50  0001 C CNN
-	1    14500 6800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14350 6800 14300 6800
-Wire Wire Line
-	14300 6800 14300 6650
-Connection ~ 14300 6650
-Wire Wire Line
-	14300 6650 14550 6650
-Wire Wire Line
-	14650 6800 14700 6800
-Wire Wire Line
-	14700 6800 14700 6900
-Connection ~ 14700 6900
-Wire Wire Line
-	14700 6900 14850 6900
-Wire Wire Line
-	14850 7400 14850 7350
-Wire Wire Line
-	14400 7400 14300 7400
-Wire Wire Line
-	14300 7400 14300 7150
-Connection ~ 14300 7150
-Wire Wire Line
-	14300 7150 14550 7150
-$Comp
-L Device:D D7
-U 1 1 5E0CC13F
-P 13300 6200
-F 0 "D7" H 13400 6100 50  0000 C CNN
-F 1 "US1J" H 13150 6100 50  0000 C CNN
-F 2 "" H 13300 6200 50  0001 C CNN
-F 3 "~" H 13300 6200 50  0001 C CNN
-	1    13300 6200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R26
-U 1 1 5E0CC149
-P 14550 7400
-F 0 "R26" V 14450 7300 50  0000 C CNN
-F 1 "1K0" V 14450 7500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 14480 7400 50  0001 C CNN
-F 3 "~" H 14550 7400 50  0001 C CNN
-	1    14550 7400
-	0    1    1    0   
-$EndComp
-$Comp
-L Driver_FET:IR2101 U10
-U 1 1 5E11FE80
-P 13050 8450
-F 0 "U10" H 12900 8900 50  0000 C CNN
-F 1 "IR2101" H 13250 8900 50  0000 C CNN
-F 2 "" H 13050 8450 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/ir2101.pdf?fileId=5546d462533600a4015355c7a755166c" H 13050 8450 50  0001 C CNN
-	1    13050 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C15
-U 1 1 5E11FE86
-P 13550 8450
-F 0 "C15" H 13400 8350 50  0000 L CNN
-F 1 "1.0uFx50V" H 13050 8450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 13588 8300 50  0001 C CNN
-F 3 "~" H 13550 8450 50  0001 C CNN
-	1    13550 8450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	13350 8150 13550 8150
-Wire Wire Line
-	13550 8150 13550 8300
-Wire Wire Line
-	13350 8650 13550 8650
-Wire Wire Line
-	13550 8650 13550 8600
-Wire Wire Line
-	13150 7800 13050 7800
-Wire Wire Line
-	13050 7800 13050 7950
-Wire Wire Line
-	13450 7800 13550 7800
-Wire Wire Line
-	13550 7800 13550 8150
-Connection ~ 13550 8150
-$Comp
-L power:GND #PWR019
-U 1 1 5E11FE95
-P 13050 9000
-F 0 "#PWR019" H 13050 8750 50  0001 C CNN
-F 1 "GND" H 13055 8827 50  0001 C CNN
-F 2 "" H 13050 9000 50  0001 C CNN
-F 3 "" H 13050 9000 50  0001 C CNN
-	1    13050 9000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13050 9000 13050 8950
-Wire Wire Line
-	13050 7800 12600 7800
-Connection ~ 13050 7800
-$Comp
-L Device:R R20
-U 1 1 5E11FE9E
-P 13950 8250
-F 0 "R20" V 14050 8150 50  0000 C CNN
-F 1 "R" V 13850 8250 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 13880 8250 50  0001 C CNN
-F 3 "~" H 13950 8250 50  0001 C CNN
-	1    13950 8250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R21
-U 1 1 5E11FEA4
-P 13950 8750
-F 0 "R21" V 13850 8650 50  0000 C CNN
-F 1 "R" V 13850 8750 50  0001 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 13880 8750 50  0001 C CNN
-F 3 "~" H 13950 8750 50  0001 C CNN
-	1    13950 8750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13800 8250 13750 8250
-Wire Wire Line
-	13800 8750 13750 8750
-Text Label 12300 7800 0    50   ~ 0
-VCC
-Wire Wire Line
-	12750 8450 12300 8450
-Wire Wire Line
-	12750 8550 12300 8550
-Text Label 12300 8450 0    50   ~ 0
-CHA
-Text Label 12300 8550 0    50   ~ 0
-~CHA
-$Comp
-L Device:C C12
-U 1 1 5E11FEB1
-P 12600 8050
-F 0 "C12" H 12750 8000 50  0000 L CNN
-F 1 "C" H 12300 8150 50  0001 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 12638 7900 50  0001 C CNN
-F 3 "~" H 12600 8050 50  0001 C CNN
-	1    12600 8050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	12600 7900 12600 7800
-Connection ~ 12600 7800
-Wire Wire Line
-	12600 7800 12300 7800
-$Comp
-L power:GND #PWR015
-U 1 1 5E11FEBA
-P 12600 8200
-F 0 "#PWR015" H 12600 7950 50  0001 C CNN
-F 1 "GND" H 12605 8027 50  0001 C CNN
-F 2 "" H 12600 8200 50  0001 C CNN
-F 3 "" H 12600 8200 50  0001 C CNN
-	1    12600 8200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D14
-U 1 1 5E11FEC0
-P 13950 8900
-F 0 "D14" H 13900 8800 50  0000 R CNN
-F 1 "LL4148" H 14250 8800 50  0000 R CNN
-F 2 "" H 13950 8900 50  0001 C CNN
-F 3 "~" H 13950 8900 50  0001 C CNN
-	1    13950 8900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13800 8900 13750 8900
-Wire Wire Line
-	13750 8900 13750 8750
-Connection ~ 13750 8750
-Wire Wire Line
-	13750 8750 13350 8750
-Wire Wire Line
-	14100 8900 14150 8900
-Wire Wire Line
-	14150 8900 14150 8750
-Wire Wire Line
-	14150 8750 14100 8750
-Wire Wire Line
-	14150 8750 14300 8750
-Connection ~ 14150 8750
-$Comp
-L Device:D D13
-U 1 1 5E11FECF
-P 13950 8100
-F 0 "D13" H 13900 8200 50  0000 R CNN
-F 1 "LL4148" H 14250 8200 50  0000 R CNN
-F 2 "" H 13950 8100 50  0001 C CNN
-F 3 "~" H 13950 8100 50  0001 C CNN
-	1    13950 8100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	13800 8100 13750 8100
-Wire Wire Line
-	13750 8100 13750 8250
-Connection ~ 13750 8250
-Wire Wire Line
-	13750 8250 13350 8250
-Wire Wire Line
-	14100 8100 14150 8100
-Wire Wire Line
-	14150 8100 14150 8250
-Wire Wire Line
-	14150 8250 14100 8250
-Wire Wire Line
-	14150 8250 14300 8250
-Connection ~ 14150 8250
-$Comp
-L Transistor_FET:IRF740 Q6
-U 1 1 5E11FEDE
-P 14750 8250
-F 0 "Q6" H 14950 8200 50  0000 L CNN
-F 1 "IRF830" H 14956 8205 50  0001 L CNN
-F 2 "valdiklio_footprints:TO-220-3_Vertical" H 15000 8175 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14750 8250 50  0001 L CNN
-	1    14750 8250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:IRF740 Q7
-U 1 1 5E11FEE4
-P 14750 8750
-F 0 "Q7" H 14950 8700 50  0000 L CNN
-F 1 "IRF830" H 14956 8705 50  0001 L CNN
-F 2 "valdiklio_footprints:TO-220-3_Vertical" H 15000 8675 50  0001 L CIN
-F 3 "http://www.vishay.com/docs/91054/91054.pdf" H 14750 8750 50  0001 L CNN
-	1    14750 8750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14850 8450 14850 8500
-Wire Wire Line
-	13550 8650 13750 8650
-Wire Wire Line
-	13750 8650 13750 8500
-Wire Wire Line
-	13750 8500 14700 8500
-Connection ~ 13550 8650
-Connection ~ 14850 8500
-Wire Wire Line
-	14850 8500 14850 8550
-$Comp
-L Device:R R24
-U 1 1 5E11FEF1
-P 14500 8400
-F 0 "R24" V 14400 8300 50  0000 C CNN
-F 1 "1K0" V 14400 8500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 14430 8400 50  0001 C CNN
-F 3 "~" H 14500 8400 50  0001 C CNN
-	1    14500 8400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14350 8400 14300 8400
-Wire Wire Line
-	14300 8400 14300 8250
-Connection ~ 14300 8250
-Wire Wire Line
-	14300 8250 14550 8250
-Wire Wire Line
-	14650 8400 14700 8400
-Wire Wire Line
-	14700 8400 14700 8500
-Connection ~ 14700 8500
-Wire Wire Line
-	14700 8500 14850 8500
-Wire Wire Line
-	14700 9000 14850 9000
-Wire Wire Line
-	14850 9000 14850 8950
-Wire Wire Line
-	14400 9000 14300 9000
-Wire Wire Line
-	14300 9000 14300 8750
-Connection ~ 14300 8750
-Wire Wire Line
-	14300 8750 14550 8750
-$Comp
-L Device:D D8
-U 1 1 5E11FF07
-P 13300 7800
-F 0 "D8" H 13400 7700 50  0000 C CNN
-F 1 "US1J" H 13150 7700 50  0000 C CNN
-F 2 "" H 13300 7800 50  0001 C CNN
-F 3 "~" H 13300 7800 50  0001 C CNN
-	1    13300 7800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R27
-U 1 1 5E11FF0D
-P 14550 9000
-F 0 "R27" V 14450 8900 50  0000 C CNN
-F 1 "1K0" V 14450 9100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 14480 9000 50  0001 C CNN
-F 3 "~" H 14550 9000 50  0001 C CNN
-	1    14550 9000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14850 5800 15350 5800
-Wire Wire Line
-	15350 5800 15350 7400
-Wire Wire Line
-	15350 9000 14850 9000
-Connection ~ 14850 5800
-Connection ~ 14850 9000
-Wire Wire Line
-	14850 7400 15350 7400
-Connection ~ 14850 7400
-Connection ~ 15350 7400
-Wire Wire Line
-	15350 7400 15350 9000
-Wire Wire Line
-	14850 4850 14850 4750
-Wire Wire Line
-	14850 4750 14950 4750
-Wire Wire Line
-	15450 4750 15450 6350
-Wire Wire Line
-	14850 6450 14850 6350
-Wire Wire Line
-	14850 6350 14950 6350
-Connection ~ 15450 6350
-Wire Wire Line
-	15450 6350 15450 7950
-Wire Wire Line
-	15450 7950 15250 7950
-Wire Wire Line
-	14850 7950 14850 8050
-Wire Wire Line
-	14850 5300 15200 5300
-Wire Wire Line
-	14850 6900 15200 6900
-Wire Wire Line
-	14850 8500 15200 8500
-Text Label 15200 5300 2    50   ~ 0
-PHA
-Text Label 15200 6900 2    50   ~ 0
-PHB
-Text Label 15200 8500 2    50   ~ 0
-PHC
-Wire Wire Line
-	14700 5800 14850 5800
-Wire Wire Line
-	14700 7400 14850 7400
-$Comp
-L Regulator_Switching:LNK304G U4
-U 1 1 5E6C9083
-P 3250 9800
-F 0 "U4" H 3050 9550 50  0000 C CNN
-F 1 "LNK304G" H 3350 9550 50  0000 C CNN
-F 2 "Package_DIP:PowerIntegrations_SMD-8B" H 3250 9800 50  0001 C CIN
-F 3 "http://www.powerint.com/sites/default/files/product-docs/lnk302_304-306.pdf" H 3250 9800 50  0001 C CNN
-	1    3250 9800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:PC817 U5
+L variklio_valdiklis_stm32F103-rescue:PC817-Isolator U5
 U 1 1 5E6EC4C3
-P 4150 9250
-F 0 "U5" H 4150 9575 50  0000 C CNN
-F 1 "PC817" H 4150 9484 50  0000 C CNN
-F 2 "Package_DIP:DIP-4_W7.62mm" H 3950 9050 50  0001 L CIN
-F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 4150 9250 50  0001 L CNN
-	1    4150 9250
+P 5150 9400
+F 0 "U5" H 5150 9725 50  0000 C CNN
+F 1 "PC817" H 5150 9634 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W10.16mm_LongPads" H 4950 9200 50  0001 L CIN
+F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5150 9400 50  0001 L CNN
+	1    5150 9400
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 9150 3750 9150
-Wire Wire Line
-	3350 9150 3350 9500
-Wire Wire Line
-	3150 9350 3150 9500
 $Comp
-L Device:C C3
-U 1 1 5E73889A
-P 3750 9550
-F 0 "C3" H 3450 9500 50  0000 L CNN
-F 1 "100n" H 3350 9600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3788 9400 50  0001 C CNN
-F 3 "~" H 3750 9550 50  0001 C CNN
-	1    3750 9550
-	-1   0    0    1   
+L variklio_valdiklis_stm32F103-rescue:LNK304G-Regulator_Switching U4
+U 1 1 5E6C9083
+P 4250 9950
+F 0 "U4" H 4050 9700 50  0000 C CNN
+F 1 "LNK304G" H 4350 9700 50  0000 C CNN
+F 2 "Package_DIP:PowerIntegrations_SMD-8B" H 4250 9950 50  0001 C CIN
+F 3 "http://www.powerint.com/sites/default/files/product-docs/lnk302_304-306.pdf" H 4250 9950 50  0001 C CNN
+	1    4250 9950
+	1    0    0    -1  
 $EndComp
+Connection ~ 3000 4650
 Wire Wire Line
-	3650 9800 3750 9800
+	3000 4350 3000 4650
+Text Label 1750 4550 0    50   ~ 0
+VEXT
+Connection ~ 2200 4650
 Wire Wire Line
-	3750 9800 3750 9700
+	2200 4650 1750 4650
+Text Label 1750 4650 0    50   ~ 0
+RX
+Text Label 1750 3750 0    50   ~ 0
+TX
 Wire Wire Line
-	3150 9350 3850 9350
+	1900 3750 1750 3750
 Wire Wire Line
-	3750 9400 3750 9150
-Connection ~ 3750 9150
-Wire Wire Line
-	3750 9150 3350 9150
+	2200 3750 2300 3750
 $Comp
-L Device:D D4
-U 1 1 5E785171
-P 3750 10250
-F 0 "D4" V 3800 9950 50  0000 L CNN
-F 1 "UF4005" V 3900 9850 50  0000 L CNN
-F 2 "" H 3750 10250 50  0001 C CNN
-F 3 "~" H 3750 10250 50  0001 C CNN
-	1    3750 10250
+L variklio_valdiklis_stm32F103-rescue:R-Device R2
+U 1 1 5DBBC430
+P 2050 3750
+F 0 "R2" V 1950 3700 50  0000 C CNN
+F 1 "1k0" V 1950 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1980 3750 50  0001 C CNN
+F 3 "~" H 2050 3750 50  0001 C CNN
+	1    2050 3750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 10100 3750 9800
-Connection ~ 3750 9800
-$Comp
-L Device:L L2
-U 1 1 5E7A0F3F
-P 4050 9800
-F 0 "L2" V 4150 9950 50  0000 C CNN
-F 1 "1mH/280mA" V 4000 9800 50  0000 C CNN
-F 2 "" H 4050 9800 50  0001 C CNN
-F 3 "~" H 4050 9800 50  0001 C CNN
-	1    4050 9800
-	0    -1   -1   0   
-$EndComp
+	2200 3950 2200 4050
 Wire Wire Line
-	3750 9800 3900 9800
+	2300 3950 2200 3950
 $Comp
-L Device:CP C4
-U 1 1 5E7D527B
-P 4300 10250
-F 0 "C4" H 4000 10200 50  0000 L CNN
-F 1 "100x16V" H 3900 10100 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 4338 10100 50  0001 C CNN
-F 3 "~" H 4300 10250 50  0001 C CNN
-	1    4300 10250
+L variklio_valdiklis_stm32F103-rescue:GNDD-power #PWR01
+U 1 1 5DB9D15A
+P 2200 4050
+F 0 "#PWR01" H 2200 3800 50  0001 C CNN
+F 1 "GNDD" H 2204 3895 50  0001 C CNN
+F 2 "" H 2200 4050 50  0001 C CNN
+F 3 "" H 2200 4050 50  0001 C CNN
+	1    2200 4050
 	1    0    0    -1  
 $EndComp
+Text Label 3600 4450 2    50   ~ 0
+TXD
 Wire Wire Line
-	4200 9800 4300 9800
+	3400 4450 3600 4450
 Wire Wire Line
-	4300 9800 4300 10100
-Wire Wire Line
-	3750 10400 3750 10550
-Wire Wire Line
-	3750 10550 4300 10550
-Wire Wire Line
-	4300 10550 4300 10400
-Wire Wire Line
-	5050 9800 5050 9350
-Wire Wire Line
-	5050 9150 4450 9150
-Connection ~ 4300 9800
+	3100 4450 2900 4450
 $Comp
-L Device:R R14
-U 1 1 5E893B59
-P 4800 9350
-F 0 "R14" V 4900 9450 50  0000 C CNN
-F 1 "1k0" V 4900 9250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4730 9350 50  0001 C CNN
-F 3 "~" H 4800 9350 50  0001 C CNN
-	1    4800 9350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4300 9800 5050 9800
-Wire Wire Line
-	4950 9350 5050 9350
-Connection ~ 5050 9350
-Wire Wire Line
-	5050 9350 5050 9150
-Wire Wire Line
-	4450 9350 4550 9350
-$Comp
-L Device:D_Zener D5
-U 1 1 5E93BD46
-P 4550 10250
-F 0 "D5" V 4550 10329 50  0000 L CNN
-F 1 "D_Zener" V 4595 10329 50  0001 L CNN
-F 2 "" H 4550 10250 50  0001 C CNN
-F 3 "~" H 4550 10250 50  0001 C CNN
-	1    4550 10250
+L variklio_valdiklis_stm32F103-rescue:R-Device R9
+U 1 1 5DB23F0F
+P 3250 4450
+F 0 "R9" V 3150 4400 50  0000 C CNN
+F 1 "1k0" V 3150 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 4450 50  0001 C CNN
+F 3 "~" H 3250 4450 50  0001 C CNN
+	1    3250 4450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4550 10100 4550 9350
-Connection ~ 4550 9350
+	3000 4650 3000 4750
 Wire Wire Line
-	4550 9350 4650 9350
-Wire Wire Line
-	4300 10550 4550 10550
-Wire Wire Line
-	4550 10550 4550 10400
-Connection ~ 4300 10550
-Wire Wire Line
-	5050 9800 5450 9800
-Connection ~ 5050 9800
-Connection ~ 4550 10550
-Wire Wire Line
-	3750 10550 2750 10550
-Connection ~ 3750 10550
-Wire Wire Line
-	2850 9800 2750 9800
+	2900 4650 3000 4650
 $Comp
-L Device:CP C2
-U 1 1 5E9EF72A
-P 2750 10150
-F 0 "C2" H 2850 10050 50  0000 L CNN
-F 1 "4.7x400V" H 2800 9950 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 2788 10000 50  0001 C CNN
-F 3 "~" H 2750 10150 50  0001 C CNN
-	1    2750 10150
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR04
+U 1 1 5DB05CDD
+P 3000 4750
+F 0 "#PWR04" H 3000 4500 50  0001 C CNN
+F 1 "GND" H 3005 4577 50  0001 C CNN
+F 2 "" H 3000 4750 50  0001 C CNN
+F 3 "" H 3000 4750 50  0001 C CNN
+	1    3000 4750
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C1
-U 1 1 5E9EFBCE
-P 2200 10150
-F 0 "C1" H 1800 10250 50  0000 L CNN
-F 1 "4.7x400V" H 1650 10150 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 2238 10000 50  0001 C CNN
-F 3 "~" H 2200 10150 50  0001 C CNN
-	1    2200 10150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L L1
-U 1 1 5E9EFE57
-P 2500 9800
-F 0 "L1" V 2600 9900 50  0000 C CNN
-F 1 "1mH" V 2600 9700 50  0000 C CNN
-F 2 "" H 2500 9800 50  0001 C CNN
-F 3 "~" H 2500 9800 50  0001 C CNN
-	1    2500 9800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2350 9800 2200 9800
-Wire Wire Line
-	2750 10000 2750 9800
-Connection ~ 2750 9800
-Wire Wire Line
-	2750 9800 2650 9800
-Wire Wire Line
-	2750 10300 2750 10550
-Connection ~ 2750 10550
-Wire Wire Line
-	2750 10550 2200 10550
-Wire Wire Line
-	2200 10300 2200 10550
-Connection ~ 2200 10550
-Wire Wire Line
-	2200 10550 2050 10550
-Wire Wire Line
-	2200 10000 2200 9800
-Connection ~ 2200 9800
-Wire Wire Line
-	2200 9800 2000 9800
-$Comp
-L Device:D D1
-U 1 1 5EA6E24F
-P 1850 9800
-F 0 "D1" H 1850 9584 50  0000 C CNN
-F 1 "LL4005" H 1850 9675 50  0000 C CNN
-F 2 "Diode_SMD:D_MELF" H 1850 9800 50  0001 C CNN
-F 3 "~" H 1850 9800 50  0001 C CNN
-	1    1850 9800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:D D2
-U 1 1 5EA6EA07
-P 1900 10550
-F 0 "D2" H 1900 10766 50  0000 C CNN
-F 1 "LL4005" H 1900 10675 50  0000 C CNN
-F 2 "Diode_SMD:D_MELF" H 1900 10550 50  0001 C CNN
-F 3 "~" H 1900 10550 50  0001 C CNN
-	1    1900 10550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5EAAEF23
-P 1400 9800
-F 0 "R1" V 1500 9900 50  0000 C CNN
-F 1 "8R2/2W" V 1300 9800 50  0000 C CNN
-F 2 "" V 1330 9800 50  0001 C CNN
-F 3 "~" H 1400 9800 50  0001 C CNN
-	1    1400 9800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1550 9800 1700 9800
-Wire Wire Line
-	950  10550 1750 10550
-Wire Wire Line
-	1250 9800 950  9800
-$Comp
-L Device:R_US R28
-U 1 1 5EBBF51B
-P 15100 4750
-F 0 "R28" V 15000 4650 50  0000 C CNN
-F 1 "R_US" V 14986 4750 50  0001 C CNN
-F 2 "" V 15140 4740 50  0001 C CNN
-F 3 "~" H 15100 4750 50  0001 C CNN
-	1    15100 4750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15250 4750 15450 4750
-$Comp
-L Device:R_US R29
-U 1 1 5EBC0B85
-P 15100 6350
-F 0 "R29" V 15000 6250 50  0000 C CNN
-F 1 "R_US" V 14986 6350 50  0001 C CNN
-F 2 "" V 15140 6340 50  0001 C CNN
-F 3 "~" H 15100 6350 50  0001 C CNN
-	1    15100 6350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	15250 6350 15450 6350
-$Comp
-L Device:R_US R30
-U 1 1 5EBC0C64
-P 15100 7950
-F 0 "R30" V 15000 7850 50  0000 C CNN
-F 1 "R_US" V 14986 7950 50  0001 C CNN
-F 2 "" V 15140 7940 50  0001 C CNN
-F 3 "~" H 15100 7950 50  0001 C CNN
-	1    15100 7950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	14950 7950 14850 7950
-Wire Wire Line
-	8700 5450 9200 5450
-Text Label 9200 5450 2    50   ~ 0
-CURR
-Wire Wire Line
-	8700 5550 9200 5550
-Text Label 9200 5550 2    50   ~ 0
-TEMP
-Wire Wire Line
-	3200 5250 3200 5300
-Connection ~ 3200 4600
-Wire Wire Line
-	3200 4600 3200 4950
-Connection ~ 3500 4600
-Wire Wire Line
-	3200 4600 3200 4500
-Wire Wire Line
-	3500 4600 3200 4600
-Connection ~ 4700 4900
-Wire Wire Line
-	4700 5250 4700 5300
-Connection ~ 4400 4900
-Wire Wire Line
-	4700 4900 4700 4950
-Wire Wire Line
-	4400 4900 4700 4900
-$Comp
-L power:GND #PWR08
-U 1 1 5D6D10D7
-P 4700 5300
-F 0 "#PWR08" H 4700 5050 50  0001 C CNN
-F 1 "GND" H 4705 5127 50  0001 C CNN
-F 2 "" H 4700 5300 50  0001 C CNN
-F 3 "" H 4700 5300 50  0001 C CNN
-	1    4700 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C5
-U 1 1 5D6D046F
-P 4700 5100
-F 0 "C5" H 4800 5000 50  0000 L CNN
-F 1 "1.0x50V" H 4800 4900 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4738 4950 50  0001 C CNN
-F 3 "~" H 4700 5100 50  0001 C CNN
-	1    4700 5100
+L variklio_valdiklis_stm32F103-rescue:GNDD-power #PWR02
+U 1 1 5DB05441
+P 2200 5050
+F 0 "#PWR02" H 2200 4800 50  0001 C CNN
+F 1 "GNDD" H 2204 4895 50  0001 C CNN
+F 2 "" H 2200 5050 50  0001 C CNN
+F 3 "" H 2200 5050 50  0001 C CNN
+	1    2200 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 5250 4400 5300
+	2300 4550 1750 4550
 Wire Wire Line
-	4400 4900 4400 4950
+	2200 4650 2200 4750
 Wire Wire Line
-	4300 4900 4400 4900
+	2300 4650 2200 4650
 $Comp
-L power:GND #PWR07
-U 1 1 5D6CED07
-P 4400 5300
-F 0 "#PWR07" H 4400 5050 50  0001 C CNN
-F 1 "GND" H 4405 5127 50  0001 C CNN
-F 2 "" H 4400 5300 50  0001 C CNN
-F 3 "" H 4400 5300 50  0001 C CNN
-	1    4400 5300
+L variklio_valdiklis_stm32F103-rescue:R-Device R3
+U 1 1 5DACA057
+P 2200 4900
+F 0 "R3" H 2350 4950 50  0000 C CNN
+F 1 "10k" H 2350 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2130 4900 50  0001 C CNN
+F 3 "~" H 2200 4900 50  0001 C CNN
+	1    2200 4900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R13
-U 1 1 5D6CE855
-P 4400 5100
-F 0 "R13" H 4200 5100 50  0000 C CNN
-F 1 "22k" H 4200 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4330 5100 50  0001 C CNN
-F 3 "~" H 4400 5100 50  0001 C CNN
-	1    4400 5100
-	1    0    0    -1  
+L variklio_valdiklis_stm32F103-rescue:CNY17-1-Isolator U3
+U 1 1 5DAACB32
+P 2600 4550
+F 0 "U3" H 2600 4875 50  0000 C CNN
+F 1 "CNY17-1" H 2600 4784 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 2600 4550 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/83606/cny17.pdf" H 2600 4550 50  0001 L CNN
+	1    2600 4550
+	-1   0    0    -1  
 $EndComp
+Text Label 3600 3950 2    50   ~ 0
+RXD
+Connection ~ 3000 3950
 Wire Wire Line
-	3900 4900 3900 4950
-Connection ~ 3900 4900
+	3000 3950 3600 3950
+Text Label 3000 3400 3    50   ~ 0
+3VDC
 Wire Wire Line
-	4000 4900 3900 4900
+	3000 3850 3000 3400
+Wire Wire Line
+	2900 3850 3000 3850
+Wire Wire Line
+	3000 3950 2900 3950
+Wire Wire Line
+	3000 4050 3000 3950
 $Comp
-L Device:R R12
-U 1 1 5D6C5007
-P 4150 4900
-F 0 "R12" V 4050 4850 50  0000 C CNN
-F 1 "33k" V 4050 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 4080 4900 50  0001 C CNN
-F 3 "~" H 4150 4900 50  0001 C CNN
-	1    4150 4900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3900 5250 3900 5300
-Wire Wire Line
-	3900 4800 3900 4900
-$Comp
-L power:GND #PWR06
-U 1 1 5D6C26D4
-P 3900 5300
-F 0 "#PWR06" H 3900 5050 50  0001 C CNN
-F 1 "GND" H 3905 5127 50  0001 C CNN
-F 2 "" H 3900 5300 50  0001 C CNN
-F 3 "" H 3900 5300 50  0001 C CNN
-	1    3900 5300
+L variklio_valdiklis_stm32F103-rescue:R-Device R5
+U 1 1 5DA38E5A
+P 3000 4200
+F 0 "R5" H 3200 4300 50  0000 C CNN
+F 1 "10k" H 3200 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2930 4200 50  0001 C CNN
+F 3 "~" H 3000 4200 50  0001 C CNN
+	1    3000 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R11
-U 1 1 5D6C0486
-P 3900 5100
-F 0 "R11" H 3700 5150 50  0000 C CNN
-F 1 "2.2k" H 3700 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 5100 50  0001 C CNN
-F 3 "~" H 3900 5100 50  0001 C CNN
-	1    3900 5100
+L variklio_valdiklis_stm32F103-rescue:CNY17-1-Isolator U2
+U 1 1 5DA37652
+P 2600 3850
+F 0 "U2" H 2600 4175 50  0000 C CNN
+F 1 "CNY17-1" H 2600 4084 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 2600 3850 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/83606/cny17.pdf" H 2600 3850 50  0001 L CNN
+	1    2600 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 3600 3200 3500
-Wire Wire Line
-	3200 3900 3200 4200
+Text Label 5200 2650 2    50   ~ 0
+SPEED
 $Comp
-L Device:D D3
-U 1 1 5D6BE58C
-P 3200 3750
-F 0 "D3" V 3300 3650 50  0000 R CNN
-F 1 "LL4005" V 3200 3650 50  0000 R CNN
-F 2 "Diode_SMD:D_MELF" H 3200 3750 50  0001 C CNN
-F 3 "~" H 3200 3750 50  0001 C CNN
-	1    3200 3750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5D6BDBB3
-P 3200 4350
-F 0 "R8" H 3000 4400 50  0000 C CNN
-F 1 "20k" H 3000 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 4350 50  0001 C CNN
-F 3 "~" H 3200 4350 50  0001 C CNN
-	1    3200 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 5D6BD0F4
-P 3200 5300
-F 0 "#PWR05" H 3200 5050 50  0001 C CNN
-F 1 "GND" H 3205 5127 50  0001 C CNN
-F 2 "" H 3200 5300 50  0001 C CNN
-F 3 "" H 3200 5300 50  0001 C CNN
-	1    3200 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R9
-U 1 1 5D6BC7DD
-P 3200 5100
-F 0 "R9" H 3000 5150 50  0000 C CNN
-F 1 "10k" H 3000 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 5100 50  0001 C CNN
-F 3 "~" H 3200 5100 50  0001 C CNN
-	1    3200 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 4100 3900 4400
-Wire Wire Line
-	3500 4100 3900 4100
-Wire Wire Line
-	3500 4200 3500 4100
-Wire Wire Line
-	3500 4600 3500 4500
-Wire Wire Line
-	3600 4600 3500 4600
-$Comp
-L Device:R R10
-U 1 1 5D6BB84C
-P 3500 4350
-F 0 "R10" H 3700 4400 50  0000 C CNN
-F 1 "1M" H 3700 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 4350 50  0001 C CNN
-F 3 "~" H 3500 4350 50  0001 C CNN
-	1    3500 4350
-	1    0    0    -1  
-$EndComp
-Text Label 3000 3250 3    50   ~ 0
-VCC
-Wire Wire Line
-	3000 3600 3000 3500
-Wire Wire Line
-	3000 4000 3000 3900
-Wire Wire Line
-	2850 4000 3000 4000
-$Comp
-L Device:R R6
-U 1 1 5D6B2B4A
-P 3000 3750
-F 0 "R6" H 2850 3900 50  0000 C CNN
-F 1 "490" H 2850 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2930 3750 50  0001 C CNN
-F 3 "~" H 3000 3750 50  0001 C CNN
-	1    3000 3750
-	1    0    0    -1  
-$EndComp
-Connection ~ 2150 3900
-Wire Wire Line
-	2150 3900 2050 3900
-Wire Wire Line
-	2150 3700 2150 3900
-Wire Wire Line
-	1900 3700 2150 3700
-Wire Wire Line
-	1900 3750 1900 3700
-Wire Wire Line
-	1650 3900 1750 3900
-$Comp
-L Device:R_POT_TRIM VP1
-U 1 1 5D6ABAE7
-P 1900 3900
-F 0 "VP1" V 1800 3950 50  0000 C CNN
-F 1 "R_POT_TRIM" V 2000 3600 50  0001 C CNN
-F 2 "Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal" H 1900 3900 50  0001 C CNN
-F 3 "~" H 1900 3900 50  0001 C CNN
-	1    1900 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5D6AA884
-P 1500 3900
-F 0 "R2" V 1400 3750 50  0000 C CNN
-F 1 "1k" V 1400 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1430 3900 50  0001 C CNN
-F 3 "~" H 1500 3900 50  0001 C CNN
-	1    1500 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2250 4100 1050 4100
-$Comp
-L Isolator:CNY17-1 U1
-U 1 1 5D6A8E21
-P 2550 4000
-F 0 "U1" H 2550 4325 50  0000 C CNN
-F 1 "CNY17-1" H 2550 4234 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W7.62mm" H 2550 4000 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/83606/cny17.pdf" H 2550 4000 50  0001 L CNN
-	1    2550 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 4900 4700 4900
-Wire Wire Line
-	2850 4100 3500 4100
-Connection ~ 3500 4100
-Wire Wire Line
-	3000 3500 3200 3500
-Connection ~ 3000 3500
-Wire Wire Line
-	3000 3500 3000 3250
-Wire Wire Line
-	2150 3900 2250 3900
-Wire Wire Line
-	1350 3900 1050 3900
-Text Label 1050 3900 0    50   ~ 0
-OKP
-Text Label 1050 4100 0    50   ~ 0
-OKM
-$Comp
-L Transistor_BJT:BC807 Q1
+L variklio_valdiklis_stm32F103-rescue:BC807-Transistor_BJT Q1
 U 1 1 5D80D775
-P 3800 4600
-F 0 "Q1" H 3991 4554 50  0000 L CNN
-F 1 "BC807" H 3991 4645 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 4525 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 3800 4600 50  0001 L CNN
-	1    3800 4600
+P 3850 2350
+F 0 "Q1" H 4041 2304 50  0000 L CNN
+F 1 "BC807" H 4041 2395 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 2275 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC807.pdf" H 3850 2350 50  0001 L CNN
+	1    3850 2350
 	1    0    0    1   
 $EndComp
-Text Label 5150 4900 2    50   ~ 0
-SPEED
+Text Label 1100 1850 0    50   ~ 0
+OKM
+Text Label 1100 1650 0    50   ~ 0
+OKP
 Wire Wire Line
-	8700 5650 9200 5650
-Text Label 9200 5650 2    50   ~ 0
-SPEED
+	1400 1650 1100 1650
+Wire Wire Line
+	2200 1650 2300 1650
+Wire Wire Line
+	3050 1250 3050 1000
+Connection ~ 3050 1250
+Wire Wire Line
+	3050 1250 3250 1250
+Connection ~ 3550 1850
+Wire Wire Line
+	2900 1850 3550 1850
+Wire Wire Line
+	5200 2650 4750 2650
 $Comp
-L Isolator:CNY17-1 U2
-U 1 1 5DA37652
-P 2550 6550
-F 0 "U2" H 2550 6875 50  0000 C CNN
-F 1 "CNY17-1" H 2550 6784 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W7.62mm" H 2550 6550 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/83606/cny17.pdf" H 2550 6550 50  0001 L CNN
-	1    2550 6550
+L variklio_valdiklis_stm32F103-rescue:CNY17-1-Isolator U1
+U 1 1 5D6A8E21
+P 2600 1750
+F 0 "U1" H 2600 2075 50  0000 C CNN
+F 1 "CNY17-1" H 2600 1984 50  0000 C CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 2600 1750 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/83606/cny17.pdf" H 2600 1750 50  0001 L CNN
+	1    2600 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1850 1100 1850
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R1
+U 1 1 5D6AA884
+P 1550 1650
+F 0 "R1" V 1450 1500 50  0000 C CNN
+F 1 "1k" V 1450 1700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1480 1650 50  0001 C CNN
+F 3 "~" H 1550 1650 50  0001 C CNN
+	1    1550 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R_POT_TRIM-Device VP1
+U 1 1 5D6ABAE7
+P 1950 1650
+F 0 "VP1" V 1850 1700 50  0000 C CNN
+F 1 "R_POT_TRIM" V 2050 1350 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA6-H2,5_Horizontal" H 1950 1650 50  0001 C CNN
+F 3 "~" H 1950 1650 50  0001 C CNN
+	1    1950 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 1650 1800 1650
+Wire Wire Line
+	1950 1500 1950 1450
+Wire Wire Line
+	1950 1450 2200 1450
+Wire Wire Line
+	2200 1450 2200 1650
+Wire Wire Line
+	2200 1650 2100 1650
+Connection ~ 2200 1650
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R6
+U 1 1 5D6B2B4A
+P 3050 1500
+F 0 "R6" H 2900 1650 50  0000 C CNN
+F 1 "490" H 2900 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2980 1500 50  0001 C CNN
+F 3 "~" H 3050 1500 50  0001 C CNN
+	1    3050 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1750 3050 1750
+Wire Wire Line
+	3050 1750 3050 1650
+Wire Wire Line
+	3050 1350 3050 1250
+Text Label 3050 1000 3    50   ~ 0
+VCC
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R10
+U 1 1 5D6BB84C
+P 3550 2100
+F 0 "R10" H 3750 2150 50  0000 C CNN
+F 1 "1M" H 3750 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3480 2100 50  0001 C CNN
+F 3 "~" H 3550 2100 50  0001 C CNN
+	1    3550 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2350 3550 2350
+Wire Wire Line
+	3550 2350 3550 2250
+Wire Wire Line
+	3550 1950 3550 1850
+Wire Wire Line
+	3550 1850 3950 1850
+Wire Wire Line
+	3950 1850 3950 2150
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R8
+U 1 1 5D6BC7DD
+P 3250 2850
+F 0 "R8" H 3050 2900 50  0000 C CNN
+F 1 "10k" H 3050 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 2850 50  0001 C CNN
+F 3 "~" H 3250 2850 50  0001 C CNN
+	1    3250 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R5
-U 1 1 5DA38E5A
-P 2950 6900
-F 0 "R5" H 3150 7000 50  0000 C CNN
-F 1 "10k" H 3150 6900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2880 6900 50  0001 C CNN
-F 3 "~" H 2950 6900 50  0001 C CNN
-	1    2950 6900
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR05
+U 1 1 5D6BD0F4
+P 3250 3000
+F 0 "#PWR05" H 3250 2750 50  0001 C CNN
+F 1 "GND" H 3255 2827 50  0001 C CNN
+F 2 "" H 3250 3000 50  0001 C CNN
+F 3 "" H 3250 3000 50  0001 C CNN
+	1    3250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R7
+U 1 1 5D6BDBB3
+P 3250 2100
+F 0 "R7" H 3050 2150 50  0000 C CNN
+F 1 "20k" H 3050 2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3180 2100 50  0001 C CNN
+F 3 "~" H 3250 2100 50  0001 C CNN
+	1    3250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D4
+U 1 1 5D6BE58C
+P 3250 1500
+F 0 "D4" V 3350 1400 50  0000 R CNN
+F 1 "LL4148" V 3250 1400 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 3250 1500 50  0001 C CNN
+F 3 "~" H 3250 1500 50  0001 C CNN
+	1    3250 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 1650 3250 1950
+Wire Wire Line
+	3250 1350 3250 1250
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R11
+U 1 1 5D6C0486
+P 3950 2850
+F 0 "R11" H 3750 2900 50  0000 C CNN
+F 1 "2.2k" H 3750 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3880 2850 50  0001 C CNN
+F 3 "~" H 3950 2850 50  0001 C CNN
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR08
+U 1 1 5D6C26D4
+P 3950 3000
+F 0 "#PWR08" H 3950 2750 50  0001 C CNN
+F 1 "GND" H 3955 2827 50  0001 C CNN
+F 2 "" H 3950 3000 50  0001 C CNN
+F 3 "" H 3950 3000 50  0001 C CNN
+	1    3950 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 6750 2950 6650
-Wire Wire Line
-	2950 6650 2850 6650
-Wire Wire Line
-	2850 6550 2950 6550
-Wire Wire Line
-	2950 6550 2950 6100
-Text Label 2950 6100 3    50   ~ 0
-3VDC
-Wire Wire Line
-	2950 6650 3550 6650
-Connection ~ 2950 6650
-Text Label 3550 6650 2    50   ~ 0
-RXD
+	3950 2550 3950 2650
 $Comp
-L Isolator:CNY17-1 U3
-U 1 1 5DAACB32
-P 2550 7250
-F 0 "U3" H 2550 7575 50  0000 C CNN
-F 1 "CNY17-1" H 2550 7484 50  0000 C CNN
-F 2 "Package_DIP:DIP-6_W7.62mm" H 2550 7250 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/83606/cny17.pdf" H 2550 7250 50  0001 L CNN
-	1    2550 7250
+L variklio_valdiklis_stm32F103-rescue:R-Device R12
+U 1 1 5D6C5007
+P 4200 2650
+F 0 "R12" V 4100 2600 50  0000 C CNN
+F 1 "33k" V 4100 2800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4130 2650 50  0001 C CNN
+F 3 "~" H 4200 2650 50  0001 C CNN
+	1    4200 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 2650 3950 2650
+Connection ~ 3950 2650
+Wire Wire Line
+	3950 2650 3950 2700
+$Comp
+L variklio_valdiklis_stm32F103-rescue:R-Device R13
+U 1 1 5D6CE855
+P 4450 2850
+F 0 "R13" H 4250 2850 50  0000 C CNN
+F 1 "22k" H 4250 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4380 2850 50  0001 C CNN
+F 3 "~" H 4450 2850 50  0001 C CNN
+	1    4450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR09
+U 1 1 5D6CED07
+P 4450 3000
+F 0 "#PWR09" H 4450 2750 50  0001 C CNN
+F 1 "GND" H 4455 2827 50  0001 C CNN
+F 2 "" H 4450 3000 50  0001 C CNN
+F 3 "" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2650 4450 2650
+Wire Wire Line
+	4450 2650 4450 2700
+Wire Wire Line
+	4450 2650 4750 2650
+Wire Wire Line
+	4750 2650 4750 2700
+Connection ~ 4450 2650
+Connection ~ 4750 2650
+Wire Wire Line
+	3550 2350 3250 2350
+Wire Wire Line
+	3250 2350 3250 2250
+Connection ~ 3550 2350
+Wire Wire Line
+	3250 2350 3250 2700
+Connection ~ 3250 2350
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR010
+U 1 1 5D6D10D7
+P 4750 3000
+F 0 "#PWR010" H 4750 2750 50  0001 C CNN
+F 1 "GND" H 4755 2827 50  0001 C CNN
+F 2 "" H 4750 3000 50  0001 C CNN
+F 3 "" H 4750 3000 50  0001 C CNN
+	1    4750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C6
+U 1 1 5D6D046F
+P 4750 2850
+F 0 "C6" H 4900 2900 50  0000 L CNN
+F 1 "1.0x50V" H 4900 2800 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4788 2700 50  0001 C CNN
+F 3 "~" H 4750 2850 50  0001 C CNN
+	1    4750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C1
+U 1 1 5E1CB5CE
+P 3200 9200
+F 0 "C1" H 3300 9100 50  0000 L CNN
+F 1 "120x400V" H 3250 9000 50  0001 L CNN
+F 2 "Capacitor_THT:CP_Radial_D22.0mm_P10.00mm_SnapIn" H 3238 9050 50  0001 C CNN
+F 3 "~" H 3200 9200 50  0001 C CNN
+	1    3200 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 9500 2950 9500
+Wire Wire Line
+	2400 8750 2400 9500
+Wire Wire Line
+	3200 9350 3200 9500
+Connection ~ 3200 9500
+Wire Wire Line
+	3200 9500 3500 9500
+Wire Wire Line
+	2800 8750 3200 8750
+Wire Wire Line
+	3200 8750 3200 8950
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C3
+U 1 1 5E269B4B
+P 3500 9200
+F 0 "C3" H 3600 9100 50  0000 L CNN
+F 1 "120x400V" H 3550 9000 50  0001 L CNN
+F 2 "Capacitor_THT:CP_Radial_D22.0mm_P10.00mm_SnapIn" H 3538 9050 50  0001 C CNN
+F 3 "~" H 3500 9200 50  0001 C CNN
+	1    3500 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:CP-Device C4
+U 1 1 5E26A5EA
+P 3800 9200
+F 0 "C4" H 3900 9100 50  0000 L CNN
+F 1 "120x400V" H 3850 9000 50  0001 L CNN
+F 2 "Capacitor_THT:CP_Radial_D22.0mm_P10.00mm_SnapIn" H 3838 9050 50  0001 C CNN
+F 3 "~" H 3800 9200 50  0001 C CNN
+	1    3800 9200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 8750 3500 8750
+Wire Wire Line
+	3800 8750 3800 9050
+Connection ~ 3200 8750
+Wire Wire Line
+	3500 9050 3500 8750
+Connection ~ 3500 8750
+Wire Wire Line
+	3500 8750 3800 8750
+Wire Wire Line
+	3500 9350 3500 9500
+Connection ~ 3500 9500
+Wire Wire Line
+	3500 9500 3800 9500
+Wire Wire Line
+	3800 9350 3800 9500
+Connection ~ 3800 9500
+Wire Wire Line
+	3800 9500 3800 9550
+Wire Wire Line
+	3800 8750 4000 8750
+Connection ~ 3800 8750
+$Comp
+L Device:Fuse F2
+U 1 1 5E536DFC
+P 1950 8350
+F 0 "F2" V 1850 8350 50  0000 C CNN
+F 1 "5A" V 2050 8350 50  0000 C CNN
+F 2 "Fuse:Fuseholder_TR5_Littelfuse_No560_No460" V 1880 8350 50  0001 C CNN
+F 3 "~" H 1950 8350 50  0001 C CNN
+	1    1950 8350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Thermistor_PTC TH1
+U 1 1 5E5392A5
+P 1950 9150
+F 0 "TH1" V 2100 9050 50  0000 C CNN
+F 1 "33R" V 2100 9250 50  0000 C CNN
+F 2 "Varistor:RV_Disc_D9mm_W4mm_P5mm" H 2000 8950 50  0001 L CNN
+F 3 "~" H 1950 9150 50  0001 C CNN
+	1    1950 9150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 9150 1550 9150
+Wire Wire Line
+	2100 8350 2200 8350
+Wire Wire Line
+	1800 8350 1700 8350
+Wire Wire Line
+	1700 9950 1700 8350
+Wire Wire Line
+	1700 9950 1800 9950
+Wire Wire Line
+	1700 8350 1200 8350
+Wire Wire Line
+	1550 10700 1550 9150
+Wire Wire Line
+	1550 9150 1200 9150
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR07
+U 1 1 5E93E26B
+P 3800 9550
+F 0 "#PWR07" H 3800 9300 50  0001 C CNN
+F 1 "GND" H 3805 9377 50  0001 C CNN
+F 2 "" H 3800 9550 50  0001 C CNN
+F 3 "" H 3800 9550 50  0001 C CNN
+	1    3800 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR06
+U 1 1 5E977E8F
+P 3500 9550
+F 0 "#PWR06" H 3500 9300 50  0001 C CNN
+F 1 "GND" H 3505 9377 50  0001 C CNN
+F 2 "" H 3500 9550 50  0001 C CNN
+F 3 "" H 3500 9550 50  0001 C CNN
+	1    3500 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:GND-power #PWR03
+U 1 1 5E9780BA
+P 3200 9550
+F 0 "#PWR03" H 3200 9300 50  0001 C CNN
+F 1 "GND" H 3205 9377 50  0001 C CNN
+F 2 "" H 3200 9550 50  0001 C CNN
+F 3 "" H 3200 9550 50  0001 C CNN
+	1    3200 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 9500 3500 9550
+Wire Wire Line
+	3200 9550 3200 9500
+Text Label 4000 8750 2    50   ~ 0
+VB
+Wire Wire Line
+	2100 9950 2200 9950
+Connection ~ 1550 9150
+Connection ~ 1700 8350
+$Comp
+L Device:Varistor RV2
+U 1 1 5DC842B8
+P 2200 8750
+F 0 "RV2" H 1950 8750 50  0000 L CNN
+F 1 "Varistor" V 2300 8600 50  0001 L CNN
+F 2 "Varistor:RV_Disc_D9mm_W4mm_P5mm" V 2130 8750 50  0001 C CNN
+F 3 "~" H 2200 8750 50  0001 C CNN
+	1    2200 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 10700 2200 10700
+Wire Wire Line
+	2200 10450 2200 10700
+Connection ~ 2200 10700
+Wire Wire Line
+	2200 10700 2800 10700
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5DF1646F
+P 1150 7000
+F 0 "J1" H 1068 7325 50  0000 C CNN
+F 1 "Conn_01x05" H 1068 7326 50  0001 C CNN
+F 2 "valdiklio_footprints:Jungtis" H 1150 7000 50  0001 C CNN
+F 3 "~" H 1150 7000 50  0001 C CNN
+	1    1150 7000
 	-1   0    0    -1  
 $EndComp
-$Comp
-L Device:R R4
-U 1 1 5DACA057
-P 2150 7600
-F 0 "R4" H 2300 7650 50  0000 C CNN
-F 1 "10k" H 2300 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2080 7600 50  0001 C CNN
-F 3 "~" H 2150 7600 50  0001 C CNN
-	1    2150 7600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2250 7350 2150 7350
+	1350 6800 1700 6800
 Wire Wire Line
-	2150 7350 2150 7450
+	1350 6900 1700 6900
 Wire Wire Line
-	2250 7250 1700 7250
-$Comp
-L power:GNDD #PWR01
-U 1 1 5DB05441
-P 2150 7750
-F 0 "#PWR01" H 2150 7500 50  0001 C CNN
-F 1 "GNDD" H 2154 7595 50  0001 C CNN
-F 2 "" H 2150 7750 50  0001 C CNN
-F 3 "" H 2150 7750 50  0001 C CNN
-	1    2150 7750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5DB05CDD
-P 2950 7450
-F 0 "#PWR03" H 2950 7200 50  0001 C CNN
-F 1 "GND" H 2955 7277 50  0001 C CNN
-F 2 "" H 2950 7450 50  0001 C CNN
-F 3 "" H 2950 7450 50  0001 C CNN
-	1    2950 7450
-	1    0    0    -1  
-$EndComp
+	1350 7100 1700 7100
 Wire Wire Line
-	2850 7350 2950 7350
-Wire Wire Line
-	2950 7350 2950 7450
-$Comp
-L Device:R R7
-U 1 1 5DB23F0F
-P 3200 7150
-F 0 "R7" V 3100 7100 50  0000 C CNN
-F 1 "1k0" V 3100 7250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 7150 50  0001 C CNN
-F 3 "~" H 3200 7150 50  0001 C CNN
-	1    3200 7150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3050 7150 2850 7150
-Wire Wire Line
-	3350 7150 3550 7150
-Text Label 3550 7150 2    50   ~ 0
-TXD
-$Comp
-L power:GNDD #PWR02
-U 1 1 5DB9D15A
-P 2150 6750
-F 0 "#PWR02" H 2150 6500 50  0001 C CNN
-F 1 "GNDD" H 2154 6595 50  0001 C CNN
-F 2 "" H 2150 6750 50  0001 C CNN
-F 3 "" H 2150 6750 50  0001 C CNN
-	1    2150 6750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 6650 2150 6650
-Wire Wire Line
-	2150 6650 2150 6750
-$Comp
-L Device:R R3
-U 1 1 5DBBC430
-P 2000 6450
-F 0 "R3" V 1900 6400 50  0000 C CNN
-F 1 "1k0" V 1900 6550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 1930 6450 50  0001 C CNN
-F 3 "~" H 2000 6450 50  0001 C CNN
-	1    2000 6450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2150 6450 2250 6450
-Wire Wire Line
-	1850 6450 1700 6450
-Text Label 1700 6450 0    50   ~ 0
-TX
-Text Label 1700 7350 0    50   ~ 0
-RX
-Wire Wire Line
-	2150 7350 1700 7350
-Connection ~ 2150 7350
-Text Label 1700 7250 0    50   ~ 0
-VEXT
-$Comp
-L disc:USTAB_SIP21106-DT-33 U6
-U 1 1 5DCB7137
-P 5850 9850
-F 0 "U6" H 5850 10167 50  0000 C CNN
-F 1 "SIP21106" H 5850 10076 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-5" H 7600 9650 50  0001 C CIN
-F 3 "" H 7950 9750 50  0001 C CNN
-F 4 "*" H 8100 9550 60  0001 C CNN "ventcode"
-F 5 "3.3V" H 7650 9550 60  0001 C CNN "Nominalas"
-F 6 "0" H 7250 9550 60  0001 C CNN "Kaina"
-F 7 "SMD" H 9000 9850 60  0001 C CNN "Korpuso tipas"
-F 8 "Itampos stabilizatorius" H 7500 9850 60  0001 C CNN "Pavadinimas"
-F 9 "SIP21106-DT-33-E3" H 7450 9950 60  0001 C CNN "Gamintojo Kodas"
-F 10 "TSOT23-5L" H 8500 9850 60  0001 C CNN "Korpusas"
-F 11 "1.7" H 7050 9550 60  0001 C CNN "Aukstis"
-F 12 "SIP21106" H 7200 10050 60  0001 C CNN "Marke"
-F 13 "-" H 7400 9550 60  0001 C CNN "Nuoroda"
-F 14 "-" H 7900 9550 60  0001 C CNN "Parametras"
-F 15 "Markiravimas N3" H 8700 9650 60  0001 C CNN "Komentaras"
-	1    5850 9850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5DCB9202
-P 5300 9950
-F 0 "R15" V 5200 10050 50  0000 C CNN
-F 1 "10k" V 5200 9850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 9950 50  0001 C CNN
-F 3 "~" H 5300 9950 50  0001 C CNN
-	1    5300 9950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5150 9950 5050 9950
-Wire Wire Line
-	5050 9950 5050 9800
-Wire Wire Line
-	5850 10550 5850 10150
-Wire Wire Line
-	4550 10550 5050 10550
-Wire Wire Line
-	6250 9800 6550 9800
-$Comp
-L Device:C C7
-U 1 1 5DD7A77F
-P 6300 10250
-F 0 "C7" H 6500 10200 50  0000 L CNN
-F 1 "100n" H 6450 10300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6338 10100 50  0001 C CNN
-F 3 "~" H 6300 10250 50  0001 C CNN
-	1    6300 10250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5850 10550 6300 10550
-Wire Wire Line
-	6300 10550 6300 10400
-Connection ~ 5850 10550
-Wire Wire Line
-	6250 9950 6300 9950
-Wire Wire Line
-	6300 9950 6300 10100
-$Comp
-L Device:CP C9
-U 1 1 5DDBDB69
-P 6950 10250
-F 0 "C9" H 7150 10300 50  0000 L CNN
-F 1 "100x16V" H 7150 10200 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 6988 10100 50  0001 C CNN
-F 3 "~" H 6950 10250 50  0001 C CNN
-	1    6950 10250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 10100 6950 9800
-Connection ~ 6950 9800
-Wire Wire Line
-	6950 9800 7300 9800
-Wire Wire Line
-	6300 10550 6550 10550
-Wire Wire Line
-	6950 10550 6950 10400
-Connection ~ 6300 10550
-$Comp
-L Device:C C8
-U 1 1 5DE88CE0
-P 6550 10250
-F 0 "C8" H 6300 10200 50  0000 L CNN
-F 1 "0.1" H 6300 10300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6588 10100 50  0001 C CNN
-F 3 "~" H 6550 10250 50  0001 C CNN
-	1    6550 10250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6550 10100 6550 9800
-Connection ~ 6550 9800
-Wire Wire Line
-	6550 9800 6950 9800
-Wire Wire Line
-	6550 10400 6550 10550
-Connection ~ 6550 10550
-Wire Wire Line
-	6550 10550 6950 10550
-$Comp
-L Device:C C6
-U 1 1 5E08BE62
-P 5050 10250
-F 0 "C6" H 4800 10200 50  0000 L CNN
-F 1 "100n" H 4700 10300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5088 10100 50  0001 C CNN
-F 3 "~" H 5050 10250 50  0001 C CNN
-	1    5050 10250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5050 10100 5050 9950
-Connection ~ 5050 9950
-Wire Wire Line
-	5050 10400 5050 10550
-Connection ~ 5050 10550
-Wire Wire Line
-	5050 10550 5850 10550
-Text Label 7300 9800 2    50   ~ 0
-3VDC
-Text Label 950  9800 0    50   ~ 0
+	1350 7200 1700 7200
+Text Label 1700 6800 2    50   ~ 0
 ACL
-Text Label 950  10550 0    50   ~ 0
+Text Label 1700 6900 2    50   ~ 0
 ACN
-Wire Wire Line
-	2950 7050 2950 7350
-Connection ~ 2950 7350
-Wire Wire Line
-	8300 3750 8600 3750
-Connection ~ 8300 3750
-Text Label 8600 3750 2    50   ~ 0
-3VDC
+Text Label 1700 7200 2    50   ~ 0
+OKP
+Text Label 1700 7100 2    50   ~ 0
+OKM
 $Comp
-L Device:R R?
-U 1 1 5E73E369
-P 7600 3750
-F 0 "R?" V 7500 3650 50  0000 C CNN
-F 1 "10k" V 7500 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7530 3750 50  0001 C CNN
-F 3 "~" H 7600 3750 50  0001 C CNN
-	1    7600 3750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7750 3750 7900 3750
-Connection ~ 7900 3750
-Wire Wire Line
-	7450 3750 7300 3750
-Wire Wire Line
-	7300 3750 7300 4050
-Wire Wire Line
-	7300 4050 7400 4050
-$Comp
-L Device:D D?
-U 1 1 5E78758E
-P 7600 3550
-F 0 "D?" H 7750 3450 50  0000 R CNN
-F 1 "LL4005" H 7550 3450 50  0000 R CNN
-F 2 "Diode_SMD:D_MELF" H 7600 3550 50  0001 C CNN
-F 3 "~" H 7600 3550 50  0001 C CNN
-	1    7600 3550
+L variklio_valdiklis_stm32F103-rescue:R-Device R40
+U 1 1 5E2562E1
+P 2950 9250
+F 0 "R40" H 3150 9250 50  0000 C CNN
+F 1 "220k" H 3150 9350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 2880 9250 50  0001 C CNN
+F 3 "~" H 2950 9250 50  0001 C CNN
+	1    2950 9250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7750 3550 7900 3550
+	2950 9400 2950 9500
+Connection ~ 2950 9500
 Wire Wire Line
-	7900 3550 7900 3750
+	2950 9500 3200 9500
 Wire Wire Line
-	7450 3550 7300 3550
+	2950 9100 2950 8950
 Wire Wire Line
-	7300 3550 7300 3750
-Connection ~ 7300 3750
+	2950 8950 3200 8950
+Connection ~ 3200 8950
+Wire Wire Line
+	3200 8950 3200 9050
+Wire Wire Line
+	2100 9150 2200 9150
+Wire Wire Line
+	2200 8600 2200 8350
+Connection ~ 2200 8350
+Wire Wire Line
+	2200 8350 2550 8350
+Wire Wire Line
+	2200 8900 2200 9150
+Connection ~ 2200 9150
+Wire Wire Line
+	2200 9150 2550 9150
+Text Label 6200 9950 0    50   ~ 0
+VCC
 $Comp
-L Device:C C?
-U 1 1 5E7D28D6
-P 7050 4050
-F 0 "C?" V 7200 4150 50  0000 L CNN
-F 1 "100n" V 7200 3900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7088 3900 50  0001 C CNN
-F 3 "~" H 7050 4050 50  0001 C CNN
-	1    7050 4050
+L variklio_valdiklis_stm32F103-rescue:D-Device D22
+U 1 1 5E95CADA
+P 2550 8550
+F 0 "D22" H 2500 8450 50  0000 L CNN
+F 1 "D" V 2700 8150 50  0001 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 2550 8550 50  0001 C CNN
+F 3 "~" H 2550 8550 50  0001 C CNN
+	1    2550 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D23
+U 1 1 5E95DE9C
+P 2550 8950
+F 0 "D23" V 2650 8800 50  0000 L CNN
+F 1 "D" V 2700 8550 50  0001 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 2550 8950 50  0001 C CNN
+F 3 "~" H 2550 8950 50  0001 C CNN
+	1    2550 8950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5E7D3865
-P 6900 4050
-F 0 "#PWR?" H 6900 3800 50  0001 C CNN
-F 1 "GND" H 6905 3877 50  0001 C CNN
-F 2 "" H 6900 4050 50  0001 C CNN
-F 3 "" H 6900 4050 50  0001 C CNN
-	1    6900 4050
+L variklio_valdiklis_stm32F103-rescue:D-Device D24
+U 1 1 5E95EA99
+P 2800 8550
+F 0 "D24" V 2800 8350 50  0000 L CNN
+F 1 "D" V 2950 8150 50  0001 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 2800 8550 50  0001 C CNN
+F 3 "~" H 2800 8550 50  0001 C CNN
+	1    2800 8550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L variklio_valdiklis_stm32F103-rescue:D-Device D25
+U 1 1 5EABFF66
+P 2800 8950
+F 0 "D25" V 2700 9000 50  0000 L CNN
+F 1 "D" V 2950 8550 50  0001 L CNN
+F 2 "Diode_THT:D_DO-201AD_P15.24mm_Horizontal" H 2800 8950 50  0001 C CNN
+F 3 "~" H 2800 8950 50  0001 C CNN
+	1    2800 8950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7200 4050 7300 4050
-Connection ~ 7300 4050
-$Comp
-L power:GND #PWR?
-U 1 1 5E8455A4
-P 5850 10600
-F 0 "#PWR?" H 5850 10350 50  0001 C CNN
-F 1 "GND" H 5855 10427 50  0001 C CNN
-F 2 "" H 5850 10600 50  0001 C CNN
-F 3 "" H 5850 10600 50  0001 C CNN
-	1    5850 10600
-	1    0    0    -1  
-$EndComp
+	2800 9100 2800 9150
 Wire Wire Line
-	5850 10550 5850 10600
+	2550 9100 2550 9150
+Connection ~ 2550 9150
+Wire Wire Line
+	2550 9150 2800 9150
+Wire Wire Line
+	2800 8400 2800 8350
+Wire Wire Line
+	2550 8400 2550 8350
+Connection ~ 2550 8350
+Wire Wire Line
+	2550 8350 2800 8350
+Wire Wire Line
+	2550 8700 2550 8750
+Wire Wire Line
+	2800 8800 2800 8750
+Wire Wire Line
+	2400 8750 2550 8750
+Connection ~ 2550 8750
+Wire Wire Line
+	2550 8750 2550 8800
+Connection ~ 2800 8750
+Wire Wire Line
+	2800 8750 2800 8700
 $EndSCHEMATC

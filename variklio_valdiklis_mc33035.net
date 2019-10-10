@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:\Work\Git\variklio_valdiklis_sks\variklio_valdiklis_mc33035.sch)
-    (date "2019-10-10 08:17:21")
+    (date "2019-10-10 08:17:10")
     (tool "Eeschema (5.1.2)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

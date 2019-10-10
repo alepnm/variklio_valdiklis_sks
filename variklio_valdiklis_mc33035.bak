@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
-LIBS:variklio_valdiklis-cache
-EELAYER 29 0
+LIBS:variklio_valdiklis_mc33035-cache
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1205,7 +1205,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 4450 5100 4350
 $Comp
-L variklio_valdiklis-rescue:MC33035-ics U600
+L variklio_valdiklis_mc33035-rescue:MC33035-ics-variklio_valdiklis-rescue U600
 U 1 1 5D733183
 P 5250 2750
 F 0 "U600" H 4850 3600 50  0000 C CNN
@@ -1515,7 +1515,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 5450 5100 5600
 $Comp
-L variklio_valdiklis-rescue:MC33039-ics U602
+L variklio_valdiklis_mc33035-rescue:MC33039-ics-variklio_valdiklis-rescue U602
 U 1 1 68D8E883
 P 2900 2150
 F 0 "U602" H 3100 2450 50  0000 C CNN
@@ -2151,7 +2151,7 @@ F 3 "~" H 7400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L variklio_valdiklis-rescue:A1101ELHL-Sensor_Magnetic H600
+L variklio_valdiklis_mc33035-rescue:A1101ELHL-Sensor_Magnetic-variklio_valdiklis-rescue H600
 U 1 1 5EADD3C9
 P 12050 1950
 F 0 "H600" H 12250 2300 50  0000 R CNN
@@ -2162,7 +2162,7 @@ F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 12050
 	-1   0    0    -1  
 $EndComp
 $Comp
-L variklio_valdiklis-rescue:A1101ELHL-Sensor_Magnetic H601
+L variklio_valdiklis_mc33035-rescue:A1101ELHL-Sensor_Magnetic-variklio_valdiklis-rescue H601
 U 1 1 5EADD3D3
 P 12750 1950
 F 0 "H601" H 12900 2300 50  0000 R CNN
@@ -2173,7 +2173,7 @@ F 3 "http://www.allegromicro.com/en/Products/Part_Numbers/1101/1101.pdf" H 12750
 	-1   0    0    -1  
 $EndComp
 $Comp
-L variklio_valdiklis-rescue:A1101ELHL-Sensor_Magnetic H602
+L variklio_valdiklis_mc33035-rescue:A1101ELHL-Sensor_Magnetic-variklio_valdiklis-rescue H602
 U 1 1 5EADD3DD
 P 13450 1950
 F 0 "H602" H 13650 2300 50  0000 R CNN
@@ -3053,7 +3053,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 10500 5200 10000
 $Comp
-L resistors_us:R_0R22_2W_5% R826
+L variklio_valdiklis_mc33035-rescue:R_0R22_2W_5%-resistors_us R826
 U 1 1 5DA65689
 P 14500 2900
 F 0 "R826" H 14450 2800 50  0000 C CNN
@@ -3074,7 +3074,7 @@ $EndComp
 Wire Wire Line
 	14650 2900 14950 2900
 $Comp
-L resistors_us:R_0R22_2W_5% R827
+L variklio_valdiklis_mc33035-rescue:R_0R22_2W_5%-resistors_us R827
 U 1 1 5DA69207
 P 14500 4500
 F 0 "R827" H 14450 4400 50  0000 C CNN
@@ -3095,7 +3095,7 @@ $EndComp
 Wire Wire Line
 	14350 4500 14050 4500
 $Comp
-L resistors_us:R_0R22_2W_5% R828
+L variklio_valdiklis_mc33035-rescue:R_0R22_2W_5%-resistors_us R828
 U 1 1 5DA69BB3
 P 14500 6100
 F 0 "R828" H 14450 6000 50  0000 C CNN
@@ -3117,150 +3117,6 @@ Wire Wire Line
 	14650 6100 14950 6100
 Connection ~ 14850 5950
 Connection ~ 14950 4500
-$Comp
-L stm32f103c8tx:STM32F103C8Tx U?
-U 1 1 5DEB1DA7
-P -4050 7650
-F 0 "U?" H -4050 8550 50  0000 C CNN
-F 1 "STM32F103C8Tx" H -4050 8450 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H -4650 6250 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H -4050 7650 50  0001 C CNN
-	1    -4050 7650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-3450 7450 -2950 7450
-Wire Wire Line
-	-3450 7550 -2950 7550
-Wire Wire Line
-	-3450 7650 -2950 7650
-Text Label -2950 7450 2    50   ~ 0
-HALLA
-Text Label -2950 7550 2    50   ~ 0
-HALLB
-Text Label -2950 7650 2    50   ~ 0
-HALLC
-Wire Wire Line
-	-3450 8050 -2950 8050
-Text Label -2950 8050 2    50   ~ 0
-OUT_BRK
-Wire Wire Line
-	-3450 8150 -2950 8150
-Wire Wire Line
-	-4750 7450 -5250 7450
-Wire Wire Line
-	-4750 7550 -5250 7550
-Wire Wire Line
-	-3450 8250 -2950 8250
-Wire Wire Line
-	-3450 8350 -2950 8350
-Wire Wire Line
-	-3450 8450 -2950 8450
-Text Label -2950 8250 2    50   ~ 0
-CHA
-Text Label -2950 8350 2    50   ~ 0
-CHB
-Text Label -2950 8450 2    50   ~ 0
-CHC
-Text Label -2950 8150 2    50   ~ 0
-~CHA
-Text Label -5250 7450 0    50   ~ 0
-~CHB
-Text Label -5250 7550 0    50   ~ 0
-~CHC
-Wire Wire Line
-	-4750 8150 -5250 8150
-Wire Wire Line
-	-4750 8050 -5250 8050
-Text Label -5250 8050 0    50   ~ 0
-TXD
-Text Label -5250 8150 0    50   ~ 0
-RXD
-$Comp
-L power:GND #PWR?
-U 1 1 5E2CC035
-P -4250 9200
-F 0 "#PWR?" H -4250 8950 50  0001 C CNN
-F 1 "GND" H -4245 9027 50  0001 C CNN
-F 2 "" H -4250 9200 50  0001 C CNN
-F 3 "" H -4250 9200 50  0001 C CNN
-	1    -4250 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2CCA21
-P -4150 9200
-F 0 "#PWR?" H -4150 8950 50  0001 C CNN
-F 1 "GND" H -4145 9027 50  0001 C CNN
-F 2 "" H -4150 9200 50  0001 C CNN
-F 3 "" H -4150 9200 50  0001 C CNN
-	1    -4150 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2CCBDE
-P -4050 9200
-F 0 "#PWR?" H -4050 8950 50  0001 C CNN
-F 1 "GND" H -4045 9027 50  0001 C CNN
-F 2 "" H -4050 9200 50  0001 C CNN
-F 3 "" H -4050 9200 50  0001 C CNN
-	1    -4050 9200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5E2CCE43
-P -3950 9200
-F 0 "#PWR?" H -3950 8950 50  0001 C CNN
-F 1 "GND" H -3945 9027 50  0001 C CNN
-F 2 "" H -3950 9200 50  0001 C CNN
-F 3 "" H -3950 9200 50  0001 C CNN
-	1    -3950 9200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	-4250 9150 -4250 9200
-Wire Wire Line
-	-4150 9150 -4150 9200
-Wire Wire Line
-	-4050 9150 -4050 9200
-Wire Wire Line
-	-3950 9150 -3950 9200
-Wire Wire Line
-	-3850 6150 -3850 6050
-Wire Wire Line
-	-3850 6050 -3950 6050
-Wire Wire Line
-	-4150 6050 -4150 6150
-Wire Wire Line
-	-4050 6150 -4050 6050
-Connection ~ -4050 6050
-Wire Wire Line
-	-4050 6050 -4150 6050
-Wire Wire Line
-	-3950 6150 -3950 6050
-Connection ~ -3950 6050
-Wire Wire Line
-	-3950 6050 -4050 6050
-Wire Wire Line
-	-4250 6150 -4250 6050
-Wire Wire Line
-	-4250 6050 -4150 6050
-Connection ~ -4150 6050
-Wire Wire Line
-	-4750 7050 -5250 7050
-Text Label -5250 7050 0    50   ~ 0
-LED
-Wire Wire Line
-	-3450 8750 -2950 8750
-Wire Wire Line
-	-3450 8850 -2950 8850
-Text Label -2950 8750 2    50   ~ 0
-SWDIO
-Text Label -2950 8850 2    50   ~ 0
-SWDCLK
 Wire Bus Line
 	6750 1900 6750 3050
 Wire Bus Line

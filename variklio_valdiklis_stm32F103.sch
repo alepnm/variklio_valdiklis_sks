@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:variklio_valdiklis_stm32F103-cache
-EELAYER 30 0
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -1426,7 +1426,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 3050 8500 3050
 $Comp
-L mech:ISP_SWD_Connector J3
+L variklio_valdiklis_stm32F103-rescue:ISP_SWD_Connector-mech J3
 U 1 1 5DDC24FE
 P 7950 2650
 F 0 "J3" H 7733 2783 50  0000 C CNN

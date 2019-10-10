@@ -246,6 +246,41 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# ISP_SWD_Connector-mech
+#
+DEF ISP_SWD_Connector-mech J 0 1 Y Y 1 F N
+F0 "J" -300 100 50 H V C CNN
+F1 "ISP_SWD_Connector-mech" 600 -100 50 H V C CNN
+F2 "mech:ISP_SWD_Connector" 700 -200 50 H I C CNN
+F3 "http://katalog.we-online.com/em/datasheet/69036718xx72.pdf" 1400 -400 50 H I C CNN
+F4 "ZAJ071" 450 0 60 H I C CNN "ventcode"
+F5 "-" 1400 -200 60 H I C CNN "Nominalas"
+F6 "0.12" 350 -300 60 H I C CNN "Kaina"
+F7 "-" 550 -300 60 H I C CNN "Korpusas"
+F8 "4" 200 600 60 H I C CNN "Aukstis"
+F9 "Micro-MaTch TE CONNECTIVITY 215079-6" 300 700 60 H I C CNN "Marke"
+F10 "Jungtis" 400 800 60 H I C CNN "Pavadinimas"
+F11 "215079-6" 500 900 60 H I C CNN "Gamintojo Kodas"
+F12 "https://www.tme.eu/lt/details/amp-7-215079-6/micro-match-jungtys-127-mm/te-connectivity/215079-6/" 600 1000 60 H I C CNN "Nuoroda"
+F13 "DIP" 700 1100 60 H I C CNN "Korpuso tipas"
+F14 "-" 800 1200 60 H I C CNN "Parametras"
+F15 "-" 900 1300 60 H I C CNN "Komentaras"
+DRAW
+S -150 50 -450 -550 0 1 0 N
+P 2 0 1 0 -150 -450 -450 -450 N
+P 2 0 1 0 -150 -350 -450 -350 N
+P 2 0 1 0 -150 -250 -450 -250 N
+P 2 0 1 0 -150 -150 -450 -150 N
+P 2 0 1 0 -150 -50 -450 -50 N
+X SWDIO 1 0 0 150 L 50 50 1 1 P
+X ~ 2 0 -100 150 L 50 50 1 1 P
+X SWCLK 3 0 -200 150 L 50 50 1 1 P
+X ~NRST 4 0 -300 150 L 50 50 1 1 P
+X VCC 5 0 -400 150 L 50 50 1 1 P
+X GND 6 0 -500 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # L-Device
 #
 DEF L-Device L 0 40 N N 1 F N
